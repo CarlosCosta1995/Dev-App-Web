@@ -262,5 +262,19 @@ public class Program
 			a++;
 		}
 		//----------------------------------------------------*/
+		
+		/*//Exercicio 12
+		float a; //inserir um numero
+		a = float.Parse(Console.ReadLine());
+		float x;
+		x = a%2;
+		
+		if (x==0){
+			Console.WriteLine("É Par!");
+		}
+		else {
+			Console.WriteLine("É impar!");
+		}
+		//----------------------------------------------------*/
 	}
 }
