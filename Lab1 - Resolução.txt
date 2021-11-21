@@ -235,7 +235,8 @@ public class Program
 		//Calculo de restantes faltas
 		//Console.WriteLine("Tem"+" "+ (PFaltas - faltas)+" "+ " faltas disponiveis! Have fun! :)");
 		//---------------------------------------*/
-/* //Exercicio 11
+
+		/* //Exercicio 11
 		int a; //intrevalo de numero menor
 		int b; //intrevalo de numero maior
 		float i;
