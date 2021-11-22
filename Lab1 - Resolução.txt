@@ -144,7 +144,7 @@ public class Program
 		/*Exercicio 6*/
 		//Pedir ao utilizador um raio de um circulo
 		double r1;
-		float Pi = 3.14f;
+		float Pi = 3.14f; //Maior precisão usar a funções Math.PI
 		
 		Console.WriteLine("insira o raio do circulo");
 		r1 = long.Parse(Console.ReadLine());
@@ -188,7 +188,8 @@ public class Program
 		//variaveis que posso ser aceites com casas decimais
 		double a; //variavel a
 		Console.Write("Insira o valor de a");
-		a = double.Parse(Console.ReadLine());
+
+		a = double.Parse(Console.ReadLine()); //Temos de conversao do Convert.ToDouble(Console.ReadLine()); //Pois double nao premite usar double.Parse(Console.ReadLine());
 		
 		double b; //Variavel b
 		Console.Write("Insira o valor de a");
