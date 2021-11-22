@@ -236,30 +236,25 @@ public class Program
 		//Console.WriteLine("Tem"+" "+ (PFaltas - faltas)+" "+ " faltas disponiveis! Have fun! :)");
 		//---------------------------------------*/
 
-		/* //Exercicio 11
-		int a; //intrevalo de numero menor
-		int b; //intrevalo de numero maior
-		float i;
-		int n; 
-		float y;		
+		/*//Exercicio 11
+		int a; //intrevalo de numero menor, com numeros inteiros
+		int b; //intrevalo de numero maior	
 		
 		//definir os intrevalos
 		Console.WriteLine("Insina um intrevalo de 5 numeros. Um numero Menor e Um numero Maior respectivamente");
-		a = int.Parse(Console.ReadLine());
-		b = int.Parse(Console.ReadLine());
+		a = int.Parse(Console.ReadLine()); //insere o numero menor do intrevalo
+		b = int.Parse(Console.ReadLine()); //insere o numero maio do intrevalo
 		
-		//Caldulo dos numeros em que a divisao seja zero(0)
-		//nZero = ++a % 5;
-		//Console.WriteLine("++a % 5 ="+" "+ nZero);
+		int inc; //variavel que contem cada numero dentro do intrevalo
+		inc = a; //Inicia-se igual ao numero menor do intrevalo
+		int aux; //Variavel  para conter o valor da conta auxiliar
 		
-		//Colocando uma variavel i em que inicialmente tem valor de zero, sendo incrementada +1 a i a cada execução da função
-		//A função é executada varias vezes quanto o numeros no intrevalo de [a,b]. Exemplo a=2, b=10 a função é executada 8 vezes (Porque 10(b)- 2(a) = 8
-		y= b-a;
-		for (i=0; i < y; i++)
-		{
-			n = a%5;
-			Console.WriteLine(n);
-			a++;
+		while (inc <= b){ //inc é o intrevalo entre (a,b), inicialmente sendo igual ao numero menor a, incrementando inc+1 até ser <= b (numero maior)
+			aux = inc%5;
+			if(aux == 0){//Se a divisao dá resto Zero, imprime o numero
+				Console.WriteLine("numero divisivel " +inc);
+			}
+			inc++; //incrementa +1 ao inc
 		}
 		//----------------------------------------------------*/
 		
