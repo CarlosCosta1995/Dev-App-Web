@@ -277,6 +277,69 @@ public class Program
 		
 		
 		/*------------------------------------------------------------ LAB2 -----------------------------------------------------*/
+		/*//Exercicio 1
+		//intrudução dos valores
+		Console.WriteLine("EScreva o valor de a");
+		int a = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("EScreva o valor de ");
+		int b = int.Parse(Console.ReadLine());
+		//int mdc; //algoritmo de Euclides
+		
+		//double resto; //resto da divisao
+		int r = 0; // resultado do alguritmo de Euclides
+		
+		//Calculo doalgoritmo de Euclides
+		//Calcular o resto R da divisão inteira de A por B
+		//Atribuir o valor de B ao A 
+		//Atribuir o valor de R ao B
+		
+		if(b==0){
+			Console.WriteLine("O MDC é" +" " + a);
+		}else{
+			while(b > 0 ) {
+			r=b;
+			b=a%b;
+			a=r;
+			}
+			//Console.WriteLine("O MDC é" + a);
+		}
+		Console.WriteLine("O MDC é" +" " + a);
+	}
+	//-------------------------------------------------*/
+		
+	//Exercicio 2
+		long ce;// Graus em Celsius
+		long fah;//Graus em Fahrenheit
+		
+		Console.WriteLine("Para converter insira os nume dos gaus em Celsius or Farenheit");
+		Console.WriteLine("Apenas escreva o que deseja converter, no restante coloque como 0");
+		
+		Console.WriteLine("---------------------");
+		
+		Console.WriteLine("Insira os graus em Celsius:");
+		ce = long.Parse(Console.ReadLine()); //variavel para guardar valor em Celsius
+		Console.WriteLine("---------------------");
+		
+		Console.WriteLine("Insira os graus em Farenheit:");
+		fah = long.Parse(Console.ReadLine()); //variavel para guardar valor em Farenheit
+		
+		long auxC = 5/9; //variavel auxiliar para Celsius
+		long auxF = 9/5; //variavel auxiliar para Farenheit
+		
+		//Variavels de conversao auxiliares
+		long celsius;
+		long farenheit;
+		
+		//Calculo de conversão de Fahrenheit para Celsius
+		if (fah > 0){
+			celsius = (fah-32)* auxC;
+			Console.WriteLine("É de" + " "+ celsius + " " + "Celsius");
+		}/*else if (ce > 0 ){
+			farenheit = (ce*auxF)+32;
+			Console.WriteLine("É de" + " " + farenheit + " " + "Farenheit");
+		}*/
+	//-------------------------------------------------
 		/*LAB 2 - Exercicio 4
 		//Insirir um ano e guardar na variavel
 		Console.WriteLine("Ver ano Bissexto");
@@ -303,18 +366,34 @@ public class Program
 			Console.WriteLine("Não Bissexto");
 		}*/
 		
-		/*LAB 2 - Exercico 5
-		//Pede ao utilizador 10 numeros
-		Console.WriteLine("Escreva dez numeros seguidos!");
-		float num1; //1
-		float num2; //2
-		float num3; //3
-		float num4; //4
-		float num5; //5
-		float num6; //6
-		float num7; //7
-		float num8; //8
-		float num9; //9
-		float num10; //10
+		
+		/* //Exercico 5	
+		int maximo = 0;
+		int minimo = 0;
+		
+		int iteracao = 1;
+		Console.WriteLine("insira um valor");
+		int valor = 0;
+		
+		while ( iteracao <= 10){
+			valor = int.Parse(Console.ReadLine());
+			Console.WriteLine("valor é" + valor);
+			
+			if ( iteracao == 1) //É necessario fazer set para ter um ground definido aprao minimo.
+			{
+				minimo = valor;
+			}else //Caso o numero != 0, entao entra na condição de definir o maximo e minimo
+			{
+				if (valor >= maximo)
+				{
+					maximo = valor;
+				}else 
+				{
+					minimo = valor;
+				}
+			}
+			Console.WriteLine("O valor maximo é" + maximo);
+			Console.WriteLine("O valor minimo é" + minimo);
+			iteracao++;
 		}*/
 }
