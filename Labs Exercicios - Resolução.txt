@@ -464,6 +464,28 @@ public class Program
 		    iterador++;
 		}---------------------------------------------------------------------*/
 		
+				// Exercicio 7
+		// Escreva um programa que continue a pedir números ao utilizador até que ele insira um número negativo. Depois imprima a soma de todos os números inseridos.
+
+		double x = 0;
+		double soma; // Guarda o resultado da soma
+		double y = 0; //Guarda o ultimo numero inserido
+		int i = 0; //iterador
 		
+		while (i >= 0){
+			x = Convert.ToDouble(Console.ReadLine());
+			if (x >= 0)
+			{
+				soma = y + x; //Faz a soma
+				y = soma;
+				Console.WriteLine("A soma é {0} e o valor inserido foi {1}", soma, x);
+				i++;
+			}else if (x < 0 )
+			{
+				Console.WriteLine("A soma de {0} e {1} é {2}", y, x, y+x);
+				i = -1;	
+			}
+		
+		}---------------------------------------------------------------------*/
 		
 }
