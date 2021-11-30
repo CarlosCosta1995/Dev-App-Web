@@ -400,7 +400,7 @@ public class Program
 		}else
 		{
 			Console.WriteLine("Não Bissexto");
-		}*/
+		}------------------------------------------------------------------------------------*/
 		
 		
 		/* //Exercico 5	
@@ -432,6 +432,7 @@ public class Program
 			Console.WriteLine("O valor minimo é" + minimo);
 			iteracao++;
 		}--------------------------------------------------------------*/
+		
 		/*Exercicio 6
 		//Escreva uma função que devolve todos os números múltiplos de 19 entre 19 e 2000.
 
