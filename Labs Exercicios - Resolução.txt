@@ -452,7 +452,7 @@ public class Program
 
 		    if (result == 0) 
 		    {
-			Console.WriteLine("Este número "+ numR + " é multiplo de 19.");
+			Console.WriteLine("Este número {0} é multiplo de 19.", numR);
 
 		    }
 		   // else
