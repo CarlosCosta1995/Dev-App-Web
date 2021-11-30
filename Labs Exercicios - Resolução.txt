@@ -297,7 +297,7 @@ public class Program
 		if(b==0){
 			Console.WriteLine("O MDC é" +" " + a);
 		}else{
-			while(b > 0 ) {
+			while(b > 0 ) { //Se for para numeros pequenos (juntos) else basta. Mas para numeros maiores precisa-mos de fazer a conta varias vezes, assism usamos a funcção while
 			r=b;
 			b=a%b;
 			a=r;
