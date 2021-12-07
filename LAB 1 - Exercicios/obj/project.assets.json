@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\Documents\\GitHub\\Dev-App-Web\\LAB 1 - Exercicios\\LAB 1 - Exercicios.csproj",
-      "projectName": "LAB 1 - Exercicios",
-      "projectPath": "C:\\Users\\andre\\Documents\\GitHub\\Dev-App-Web\\LAB 1 - Exercicios\\LAB 1 - Exercicios.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\Documents\\GitHub\\Dev-App-Web\\LAB 1 - Exercicios\\LAB - Exercicios.csproj",
+      "projectName": "LAB - Exercicios",
+      "projectPath": "C:\\Users\\andre\\Documents\\GitHub\\Dev-App-Web\\LAB 1 - Exercicios\\LAB - Exercicios.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\andre\\Documents\\GitHub\\Dev-App-Web\\LAB 1 - Exercicios\\obj\\",
       "projectStyle": "PackageReference",
