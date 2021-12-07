@@ -1,0 +1,15 @@
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\bin\Debug\net6.0\LAB - Exercicios.exe
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\bin\Debug\net6.0\LAB - Exercicios.deps.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\bin\Debug\net6.0\LAB - Exercicios.runtimeconfig.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\bin\Debug\net6.0\LAB - Exercicios.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\bin\Debug\net6.0\ref\LAB - Exercicios.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\bin\Debug\net6.0\LAB - Exercicios.pdb
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\obj\Debug\net6.0\LAB - Exercicios.csproj.AssemblyReference.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\obj\Debug\net6.0\LAB - Exercicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\obj\Debug\net6.0\LAB - Exercicios.AssemblyInfoInputs.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\obj\Debug\net6.0\LAB - Exercicios.AssemblyInfo.cs
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\obj\Debug\net6.0\LAB - Exercicios.csproj.CoreCompileInputs.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\obj\Debug\net6.0\LAB - Exercicios.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\obj\Debug\net6.0\ref\LAB - Exercicios.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\obj\Debug\net6.0\LAB - Exercicios.pdb
+C:\Users\andre\Documents\GitHub\Dev-App-Web\LAB 1 - Exercicios\obj\Debug\net6.0\LAB - Exercicios.genruntimeconfig.cache
