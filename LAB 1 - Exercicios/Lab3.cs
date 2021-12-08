@@ -230,4 +230,83 @@ while (i <= alunosTurma)
 }*/
 //-----------------------------------------------------------------------------//
 
-// Exercicio 5
+/* Exercicio 5
+//Escreva um programa que peça ao utilizador x números e calcule quantos
+//valores são menores de 10 e quantos são maiores que 15.
+
+int numberPut = 0; //Asks the user to write a number
+int numberQuantity = 0; //Quantifies the numbers introduced
+
+int numbersUnder10 = 0; //Quantifies all numbers under 10
+int numberOver15 = 0;  //Quantifies all numbers over 15
+
+do 
+{
+    Console.WriteLine("Write a number!");
+    numberPut = int.Parse(Console.ReadLine());
+    numberQuantity++;
+
+    if (numberPut <= 10) { numbersUnder10++; Console.WriteLine("Numbers written under nor igual to 10 is {0}", numbersUnder10); }
+    else if (numberPut >= 15) { numberOver15++; Console.WriteLine("Numbers written over nor igual to 15 is {0}", numberOver15); }
+    else {Console.WriteLine("Number btween the range of 10 to 15. The number was {0}", numberPut); break;}
+
+} while (numberQuantity >= 0); */
+//-----------------------------------------------------------------------------//
+
+/*Exercicio 6
+//Escreva um programa que peça a um utilizador um número e imprima a
+//tabuada do mesmo
+
+Console.WriteLine("Intruduz um numero para fazer a tabuada do mesmo.");
+int number = int.Parse(Console.ReadLine());
+int numberT = 1;
+int result = 0;
+
+for (int i = 0;  i <= numberT; i++) 
+{
+    result = numberT * number;
+    Console.WriteLine("{0} * {1} = {2}",numberT, number, result);
+    numberT++;
+}*/
+//PS: O programa só para quando faltar a memória, pois o problema nao especifica quando fazer a paragem!
+//-----------------------------------------------------------------------------/
+
+/*Exercicio 7
+//Escreva um programa que peça ao utilizador 20 números e conte quantos
+//desses números são ímpar e que imprima a soma dos valores pares
+//encontrados.
+
+int number = 0;
+
+int numberQuantity = 0;
+int oddNumber = 0; //Numeros impar
+int evenNumber = 0;//Numeros pares
+
+for (int i = 0; i < 20; i++)
+{
+    Console.WriteLine("Introduza um numero até ao maximo de 20. Quantidade introduzida é {0}", numberQuantity);
+    number = int.Parse(Console.ReadLine()); //Escreve os numeros
+
+    int result = number % 2;
+    //Console.WriteLine("\n" + result); 
+
+    if (result == 0) { evenNumber++;} //Quantifica os numeros impares
+    else if (result > 0) { oddNumber++; } //Quantifica os numeros pares
+
+    //Console.Write("\n {0} foi impar. Imar = {1}", number, evenNumber);
+    //Console.Write("\n {0} foi par. Par = {1}", number, oddNumber);
+
+    numberQuantity++;
+    number++;
+}
+Console.WriteLine("\n {0} dos 20 numeros introduzidos são {1} numeros pares e {2} numeros impares.", numberQuantity, evenNumber, oddNumber);*/
+//-----------------------------------------------------------------------------/
+
+//Exercicio 8
+//Um funcionário de uma empresa recebe aumento salarial anualmente.
+//Sabemos que: a) esse funcionário foi contratado em 1995, com salário inicial
+//de$ 1.000,00; b) em 1996, recebeu aumento de 1,5% sobre seu salário
+//inicial; c) a partir de 1997 (inclusive), os aumentos salariais sempre
+//corresponderam ao dobro do percentual do ano anterior. Faça um programa
+//que determine o salário desse funcionário até o ano 2000.
+
