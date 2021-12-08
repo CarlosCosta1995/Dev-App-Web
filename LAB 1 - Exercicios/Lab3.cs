@@ -164,46 +164,70 @@ while(i >= 0)
 
 //-----------------------------------------------------------------------------//
 
-// Exercicio 4
+/* Exercicio 4
 //Escreva um programa que peça ao utilizador para inserir a nota (de 0 a 20)
 //de 30 alunos de uma turma e imprime qual é a nota mais baixa, a nota mais
 //alta e a média das notas atribuídas.
 
-Console.WriteLine("Insira uma nota:");
-int nota = 0;
+int alunosTurma = 30; //numero maximo de alunos
+int i = 0;
 
-int numeroAlunos = 30;
+float notaMin = 0;
+float notaMax = 0;
+float soma = 0;
+float media = 0;
 
-int notaMax = 0;
-int notaMin = 0;
+ //float nota = float.Parse(Console.ReadLine());//verificação
 
-int iterador = 0;
-
-while (iterador <= numeroAlunos)
+while (i <= alunosTurma)
 {
-    nota = int.Parse(Console.ReadLine());
+    //pedido de introdução e atribuição da nota
+    Console.WriteLine("Escreve a nota"); 
+    float nota = float.Parse(Console.ReadLine());
 
-    if (iterador == 0 && nota >= 0 && nota <= 20)
+    // Verifica quantas vezes é feita a incrementação automatica == 30
+    // nota++;
+    // Console.WriteLine(nota);
+
+    
+    if (nota >=0 && nota <= 20) // operador para verificar se as notas estao entre os 0 e 20 valores (aceita 2 casas decimais e nao mais que isso!)
     {
-        notaMin = nota;
-        Console.WriteLine(" Nota minima {0}", notaMin);
-        iterador++;
+        if (i == 0)// operador para inicializar o while loop operator
+        {
+            notaMin = nota;
+            Console.WriteLine("Nota minima é" + notaMin);
+            i++;
+        }
+        else if (nota >= 0 && nota <= notaMin) //operador para nota minima
+        {
+            notaMin = nota;
+            Console.WriteLine("Nota minima é" + notaMin);
+            i++;
+        }
+        else if (nota >= 0 && nota >= notaMax) //operador paranota maxima
+        {
+            notaMax = nota;
+            Console.WriteLine("Nota maxima é" + notaMax);
+            i++;
+        }
+        else if (nota >= 0 && nota >= notaMin && nota <= notaMax) //operador para se uma nota é maior que notaMin e menor notaMax. Continua a contar na soma e media
+        {
+            Console.WriteLine("A sua nota foi {0}, mas esta entre a minima de {1} e a maxima de {2}", nota, notaMin, notaMax);
+            i++;
+        }
+
+        // Faz a soma e a media das notas
+        soma = soma + nota;
+        Console.WriteLine("A soma total é " + soma);
+        media = soma / alunosTurma;
+        Console.WriteLine("A media foi " + media);
+
+        //Imprime a nota minima e maxima
+        Console.WriteLine("A nota minima foi {0} e a maxima foi {1}", notaMin, notaMax);
+
     }
-    if (iterador > 0 && nota > notaMax && nota >= 0 && nota <= 20)
-    {
-        notaMax = nota;
-        Console.WriteLine(" Nota maxima {0}", notaMax);
-        iterador++;
-    }
-    if (iterador > 0 && nota < notaMin && nota >= 0 && nota <= 20)
-    {
-        notaMin = nota;
-        Console.WriteLine(" Nota minima {0}", notaMin);
-        iterador++;
-    }
-    if (nota < 0 && nota > 20)
-    {
-        Console.WriteLine("Nota invalida, apenas podem ser valores inteiros entre 0 a 20.\n Nota inserida {0}", nota);
-        break;
-    }
-}
+    else { Console.WriteLine("Nota Invalida! Notas são entre 0 a 20 valores."); break; } //operador para invalidar notas negativas e/ou maiores que 20 valores
+}*/
+//-----------------------------------------------------------------------------//
+
+// Exercicio 5
