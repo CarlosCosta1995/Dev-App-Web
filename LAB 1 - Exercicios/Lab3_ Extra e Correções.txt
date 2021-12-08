@@ -1,0 +1,49 @@
+//========================================= Extras e Correções ====================================
+/*EXERCÍCIO 3 (Correção B)
+				Console.WriteLine("Quantas pessoas tem a turma? ");
+
+				int turma = 0;
+				turma = int.Parse(Console.ReadLine());
+
+				int n = 0;
+				int idade_turma = 0;
+		
+				int soma_idades = 0;
+				int ultimaSoma = 0;
+				float media_idade = 0;
+
+				Console.WriteLine("Qual a idade de cada um?"); //Faz a pergunta
+		
+			/*for(n = 0; n < turma; n++)
+			{
+					idade_turma = int.Parse(Console.ReadLine());	
+					Console.WriteLine("A pessoa " + n + " tem " + idade_turma);
+				
+						
+			}
+			media_idade = soma_idades/turma;
+			Console.WriteLine("\n A média de idade da turma é: " + media_idade);*/
+		
+			do //Continua a correr enquanto a condição do while é verdadeira
+			{
+				//Pede o Numero de idades até que a quantidade de pessoas igual a quantidade de pessoas na turma
+				idade_turma = int.Parse(Console.ReadLine());	
+				Console.WriteLine("A pessoa " + n + " tem " + idade_turma);
+				
+				//Enquanto o loop é verdadeiro continua a fazer a soma das idades
+				soma_idades = ultimaSoma + idade_turma; //Soma todas as idades. A ultima soma + a nova idade inserida
+				ultimaSoma = soma_idades; //Guarda a soma total anterior.
+				n++;
+				
+				if ( n == turma) //Quando a condição do while == false, entao dame a media das idades.
+				{
+					media_idade = soma_idades/turma;
+					Console.WriteLine("\n A média de idade da turma é: " + media_idade);
+					break;
+				}
+				
+			//Condição do while
+			//			||
+			//			\/
+			}while (n < turma);
+---------------------------------------------------------------------*/
