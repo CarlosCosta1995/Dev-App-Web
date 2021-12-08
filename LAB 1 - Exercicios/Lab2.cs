@@ -321,3 +321,56 @@ while (iterador <= x) // colocar um limite no iterador
     numR++;
     iterador++;
 }---------------------------------------------------------------------*/
+
+/*EXERCÍCIO 8
+Console.WriteLine("Bem-Vindo ao classificador de pessoas!"); 
+Console.WriteLine("Caso nao queira participar coloque a sua idade a zero.");
+				  
+	string nome = "joao";
+			int idade = 0;
+
+			int idade_maxima = 0; //guardar a idade maxima
+			int idade_minima = 0; //guardar a idade minima
+
+			int i = 0; //iterador
+			int soma=0;
+
+			while (i >=0) 
+			{
+    				Console.WriteLine("Insira o nome da Pessoa: ");
+    				nome = Console.ReadLine();
+    				Console.WriteLine("Insira a idade da Pessoa: ");
+    				idade = int.Parse(Console.ReadLine());
+				
+			string nome_Idade_Maxima; //guarda o nome da idade maxima
+    		string nome_Idade_Minima; //guarda o nome da idade maxima
+				
+			if(idade == 0) 
+    				{
+					Console.WriteLine(nome + " não participa.");
+				soma = i + soma; //tenho que somar é o iterador
+					Console.WriteLine("Participaram " + soma + " pessoas.");
+						break;
+					}
+    	
+				if (i==0)
+				{
+				idade_minima = idade;
+				}
+				
+				if (idade >= idade_maxima)
+    				{
+        				idade_maxima = idade; //guarda a idade maxima para depois ser comparada
+        				nome_Idade_Maxima = nome; //Guarda o nome da pessoa com a idade maxima
+        				Console.WriteLine("O {0} é o mais velho, com a idade de {1}.", nome_Idade_Maxima, idade_maxima);
+        				i++;
+    				}
+    				else if (idade <= idade_minima) 
+    				{
+        				idade_minima = idade; //guarda a idade minima para depois ser comparada
+       					nome_Idade_Minima = nome; //Guarda o nome da pessoa com a idade minima
+        				Console.WriteLine("O {0} é o mais novo, com a idade de {1}.", nome_Idade_Minima, idade_minima);
+        				i++;
+    				}			
+			}
+}---------------------------------------------------------------------*/
