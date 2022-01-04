@@ -1,8 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-
-//======================================= LAB 3 ===============================
-
+//======================================= LAB 3 ===============================//
 
 /*Exercicio 1
 //Escreva um programa que pede ao utilizador para inserir o nome e idade dos seus amigos (número definido pelo utilizador)
@@ -302,7 +300,7 @@ for (int i = 0; i < 20; i++)
 Console.WriteLine("\n {0} dos 20 numeros introduzidos são {1} numeros pares e {2} numeros impares.", numberQuantity, evenNumber, oddNumber);*/
 //-----------------------------------------------------------------------------/
 
-//Exercicio 8
+/*Exercicio 8
 //Um funcionário de uma empresa recebe aumento salarial anualmente.
 //Sabemos que: a) esse funcionário foi contratado em 1995, com salário inicial
 //de$ 1.000,00; b) em 1996, recebeu aumento de 1,5% sobre seu salário
@@ -310,3 +308,173 @@ Console.WriteLine("\n {0} dos 20 numeros introduzidos são {1} numeros pares e {
 //corresponderam ao dobro do percentual do ano anterior. Faça um programa
 //que determine o salário desse funcionário até o ano 2000.
 
+int year = 0;
+double inicialSalary = 1000;
+char dolars = '$';
+float raiseBefore1996 = 1.5f; // 1.5% == 15/10
+float raiseAfter1996 = 2.0f;
+double salary = 0;
+
+Console.WriteLine("Escreva o Ano em que começou a trabalhar");
+year = int.Parse(Console.ReadLine());
+
+salary = inicialSalary;
+
+do 
+{
+    if (year == 1995)
+    {
+        salary = inicialSalary;
+        Console.WriteLine("Your salary in the year {0} was {1} {2}", year, inicialSalary, dolars);
+    }
+   else if (year <= 1996) 
+   {
+        salary = salary * raiseBefore1996;
+        Console.WriteLine("Your salary in the year {0} was {1} {2}", year, salary, dolars);
+   }
+   else if (year >= 1997) 
+   {
+        salary = salary * raiseAfter1996;
+        Console.WriteLine("Your salary in the year {0} was {1} {2}", year, salary, dolars);
+    }
+
+    year++;
+
+}while (year <= 2000);*/
+//-----------------------------------------------------------------------------/
+
+/*Exercicio 9
+//Escreva um programa que peça ao utilizador para inserir um valor e imprima
+//todos os números ímpares menores que esse número e maiores que 1.
+
+Console.WriteLine("Insert a number over 1.");
+int number = int.Parse(Console.ReadLine());
+int numberMaxRange = number;
+
+do
+{
+    if (number % 2 != 0) 
+    {
+        Console.Write("\n All odd numbers between 1 and {0} are {1}", numberMaxRange, number);
+    }
+    number--;
+} while (number > 1 && number <= numberMaxRange);*/
+//-----------------------------------------------------------------------------/
+
+/*Exercicio 10
+//Escreva um programa que solicite dois números inteiros ao utilizador e
+//apresente como resultado o dobro desses números, que devem ser somados
+//e o resultado dessa soma ser triplicado.
+
+int number1 = int.Parse(Console.ReadLine());//ask the user for a first number
+int number2 = int.Parse(Console.ReadLine());//ask the user for a second number
+
+double result = 0; //Stores the result
+
+result = ((number1 * 2) + (number2 * 2)) * 3;
+
+Console.WriteLine("The result is {0}", result);*/
+//-----------------------------------------------------------------------------/
+
+/*Exercicio 11
+//Escreva um programa que peça ao utilizador um número inteiro e que
+//apresenta o cubo dos números até esse valor
+//a. Exemplo:
+//b.Entrada: 5
+//c.Resultado:
+//d.O número é: 1 e o cubo do 1 é: 1
+//e.O número é: 2 e o cubo dos 2 é: 8
+//f.O número é: 3 e o cubo dos 3 é: 27
+
+Console.WriteLine("Insira um numero inteiro para fazer o cubo do mesmo.");
+
+int number = int.Parse(Console.ReadLine());
+
+Console.WriteLine("O número é: {0} e o cubo de {0} é " + number * number * number, number); */
+//-----------------------------------------------------------------------------/
+
+/*Exercicio 12
+//Crie um programa que imprima todos os números entre 20 e 40 por ordem
+//decrescente e a cada dois valores (e.g., 40, 38, 36, ..)
+
+int number = 40;
+
+do
+{
+    Console.WriteLine(" " + number);
+    number--;
+    number--;
+
+} while (number >= 20 && number <= 40);*/
+//-----------------------------------------------------------------------------/
+
+/*Exercicio 13
+//Crie um programa que peça ao utilizador x número maior que 20 e imprima
+//uma árvore de natal com esse número de asteriscos
+
+Console.WriteLine("Escreva o Numero de estrelas entre 1 e 60.");
+int estrelas = int.Parse(Console.ReadLine());
+//int estrelas = 2;
+//int espaco = estrelas * 2 + 1;
+
+//tentativa 1 == Tem um buraco em cima
+/*for (int i = 1; i <= espaco;)
+{
+    estrelas++;
+    for (int a = 1; a < espaco; a++) //Cria os espaços iniciais multiplicado pelo numero das estrelas para ficar mais longe da borda.
+    {
+        Console.Write(" ");
+    }
+    for (int b = 1; b <= estrelas; b++) //Depois dos espaços criam-se as estrelas
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine(); //Para que cada loop comece numa nova linha
+    //estrelas++;
+    estrelas++;
+    espaco--;
+    }
+}*/
+
+/*tentativa 2 == Full tree!
+    for (int i = 1; i <= estrelas; i++) //A Condição acaba quando o numero do iterador é igual ao numero das estrelas
+    {
+        for (int a = 1; a < (estrelas - i); a++) //Cria os espaços diminuindo o numero para ficar mais perto da borda esquerda.
+        {
+            Console.Write(" ");
+        }
+        for (int b = 1; b < (i * 2); b++) //Depois dos espaços criam-se as estrelas. Multiplico o i para dar o dobro das estrelas em cada linha
+        {
+            Console.Write("*");
+        }
+        Console.WriteLine(); //Para que cada loop comece numa nova linha
+        //estrelas++;
+        //estrelas++;
+        //espaco--;
+    }*/
+//-----------------------------------------------------------------------------/
+
+//Exercicio 14
+//Crie um programa que peça ao utilizador para inserir um número e imprima
+//o padrão de meio triangulo, em que cada linha é representada pelo mesmo
+//número. Exemplo:
+//1
+//22
+//333
+//444
+//5555
+//66666
+
+Console.WriteLine("Escreva um numero");
+int number = int.Parse(Console.ReadLine());
+int i = 0;
+
+while (i >= 0) 
+{
+    for (int a = 0; a >= 0; a++) 
+    {
+        Console.WriteLine(number+1);
+        a++;
+    }  
+    i++;
+}
