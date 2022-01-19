@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8cea2ad1-f57a-4e76-8330-11a20ebeba0c": {
+      "ProjectGuid": "8cea2ad1-f57a-4e76-8330-11a20ebeba0c",
+      "DisplayName": "genioLampada",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
