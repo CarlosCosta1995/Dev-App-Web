@@ -1,0 +1,15 @@
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\bin\Debug\net6.0\Simulacao_Canil_Municipal.exe
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\bin\Debug\net6.0\Simulacao_Canil_Municipal.deps.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\bin\Debug\net6.0\Simulacao_Canil_Municipal.runtimeconfig.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\bin\Debug\net6.0\Simulacao_Canil_Municipal.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\bin\Debug\net6.0\ref\Simulacao_Canil_Municipal.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\bin\Debug\net6.0\Simulacao_Canil_Municipal.pdb
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\obj\Debug\net6.0\Simulacao_Canil_Municipal.csproj.AssemblyReference.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\obj\Debug\net6.0\Simulacao_Canil_Municipal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\obj\Debug\net6.0\Simulacao_Canil_Municipal.AssemblyInfoInputs.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\obj\Debug\net6.0\Simulacao_Canil_Municipal.AssemblyInfo.cs
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\obj\Debug\net6.0\Simulacao_Canil_Municipal.csproj.CoreCompileInputs.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\obj\Debug\net6.0\Simulacao_Canil_Municipal.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\obj\Debug\net6.0\ref\Simulacao_Canil_Municipal.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\obj\Debug\net6.0\Simulacao_Canil_Municipal.pdb
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Simulacao_Canil_Municipal\obj\Debug\net6.0\Simulacao_Canil_Municipal.genruntimeconfig.cache
