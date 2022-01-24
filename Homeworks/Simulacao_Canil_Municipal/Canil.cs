@@ -6,28 +6,40 @@ using System.Threading.Tasks;
 
 namespace Simulacao_Canil_Municipal
 {
+    public class Animals
+    {
+        public List<Dog> DogList  = new List<Dog>(3);
+        public List<Cat> CatList = new List<Cat>(2);
+    }
+
     //Dogs section
     public class Dog
     {
-        private string[] dog  = new string[5];
+        public string DogName { get; set; }
 
-        public string[] Doge 
-        { 
-            get { return dog; }
-            set { dog = value; }
-        } 
-
-        public Array AddDog(string dogName)
+        public void AddDog(string dogName)
         {
-            dog = new string[] { dogName };
-            return dog;
+            Animals dog = new Animals();
+            Dog dog1 = new Dog();
+            dog1.DogName = dogName;
+            dog.DogList.Add(dog1);
+
+            Console.WriteLine("Seu cao foi adicionado ao canil com o nome de {0}", dog1.DogName);
         }
 
-        public Array AdoptDog(int escolherCao)
+        public void AdoptDog(Dog nomeCao)
         {
-            Console.WriteLine("Adoção do cao previamente chamado de {0}", dog[escolherCao].ToString());
-            dog[escolherCao] = "";
-            return dog;
+            Animals dog = new Animals();
+            bool dogListed = dog.DogList.Contains(nomeCao);
+            if (dogListed == true)
+            {
+                Console.WriteLine("Adoção do cao previamente chamado de {0}", nomeCao.DogName);
+                dog.DogList.RemoveAt(dog.DogList.IndexOf(nomeCao));
+            }
+            else
+            {
+                Console.WriteLine("Cão nao encontrado! Chamado de {0}", nomeCao.DogName);
+            }
         }
     }
 

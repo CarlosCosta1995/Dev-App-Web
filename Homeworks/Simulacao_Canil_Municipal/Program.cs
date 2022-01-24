@@ -6,15 +6,25 @@
 
 using Simulacao_Canil_Municipal;
 
-Dog cao = new Dog();
+Dog farrusco = new Dog();
+farrusco.DogName = "Farrusco";
+farrusco.AddDog(farrusco.DogName);
 
+
+Dog bobby = new Dog();
+bobby.DogName = "Bobby";
+bobby.AddDog(bobby.DogName);
+
+farrusco.AdoptDog(farrusco);
+
+/*
 cao.AddDog("Farrusco");
 //Console.WriteLine(cao.Doge[0]);
 cao.AddDog("Bobby");
-Console.WriteLine(cao.Doge[0]);
+Console.WriteLine(cao.);
 Console.WriteLine(cao.Doge[1]);
 
-/*
+
 for (int i = 0; i <= 2; i++)
 {
     Console.WriteLine(cao.Doge[i]);
