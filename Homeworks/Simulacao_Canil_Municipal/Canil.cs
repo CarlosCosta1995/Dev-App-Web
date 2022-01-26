@@ -6,69 +6,75 @@ using System.Threading.Tasks;
 
 namespace Simulacao_Canil_Municipal
 {
-    public class Animals
+    public class Canil
     {
-        public List<Dog> DogList  = new List<Dog>(3);
-        public List<Cat> CatList = new List<Cat>(2);
-    }
+        public int _capacidadeMaxima;
+        public int _lugaresOcupados;
+        public string _nomeCanil;
+        //public List<Animal> _animal = new List<Animal>();
+        public Animal[] listaAnimals;
 
-    //Dogs section
-    public class Dog
-    {
-        public string DogName { get; set; }
-
-        public void AddDog(string dogName)
+        public Canil (string nome, int capacidade)
         {
-            Animals dog = new Animals();
-            Dog dog1 = new Dog();
-            dog1.DogName = dogName;
-            dog.DogList.Add(dog1);
-
-            Console.WriteLine("Seu cao foi adicionado ao canil com o nome de {0}", dog1.DogName);
+            this._nomeCanil = nome;
+            this._capacidadeMaxima = capacidade;
+            this.listaAnimals = new Animal[capacidade];
         }
-
-        public void AdoptDog(Dog nomeCao)
+        public Animal[] registarAnimal(Animal animal)
         {
-            Animals dog = new Animals();
-            bool dogListed = dog.DogList.Contains(nomeCao);
-            if (dogListed == true)
+            for (int i = 0; i < _capacidadeMaxima; i++)
             {
-                Console.WriteLine("Adoção do cao previamente chamado de {0}", nomeCao.DogName);
-                dog.DogList.RemoveAt(dog.DogList.IndexOf(nomeCao));
-            }
-            else
-            {
-                Console.WriteLine("Cão nao encontrado! Chamado de {0}", nomeCao.DogName);
-            }
-        }
-    }
-
-    //Cat section
-    public class Cat
-    {
-        private string[] cat = new string[2];
-
-        public Array addCat(string dogName)
-        {
-            if (cat.Length <= 2)
-            {
-                for (int i = 0; i < 2; i++)
+                if (listaAnimals[i] == null)
                 {
-                    cat[i] = dogName;
+                    listaAnimals[i] = animal;
+                    _capacidadeMaxima--;
+                    _lugaresOcupados++;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("nao tem lugares disponiveis para acolher animals!");
                 }
             }
-            else
-            {
-                Console.WriteLine("Canil dos gatos cheio!");
-            }
-            return cat;
+            return listaAnimals;
         }
 
-        public Array AdoptDog(int escolherCao)
+        public void adotarAnimal (int chip)
         {
-            Console.WriteLine("Adoção do gato previamente chamado de {0}", cat[escolherCao].ToString());
-            cat[escolherCao] = "";
-            return cat;
+            for (int i = 0; i < listaAnimals.Length; i++)
+            {
+                if (listaAnimals[i].chip == chip)
+                {
+                    listaAnimals[i] = null;
+                    _capacidadeMaxima++;
+                    _lugaresOcupados--;
+                    Console.WriteLine("O animal com chip {0} foi adotado", chip);
+                }
+            }
         }
+    }
+
+    public class Animal
+    {
+        private string _nome;
+        private string _tipoAnimal;
+        private string _porte;
+        private int _chip;
+        private double _peso;
+
+        public Animal(string nome, string tipoAnimal, string porte, int chip, double peso)
+        {
+            _nome = nome;
+            _tipoAnimal = tipoAnimal;
+            _porte = porte;
+            _chip = chip;
+            _peso = peso;
+        }
+
+        public string Nome { get { return _nome;} set { _nome = value; } }
+        public string tipoAnimal { get { return _tipoAnimal; } set { _tipoAnimal = value; } }
+        public string porte { get { return _porte; } set { _porte = value; } }
+        public int chip { get { return _chip; } set { _chip = value; } }
+        public double peso { get { return _peso; } set { _peso = value; } }
     }
 }

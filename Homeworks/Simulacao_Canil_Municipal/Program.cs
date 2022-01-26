@@ -6,27 +6,15 @@
 
 using Simulacao_Canil_Municipal;
 
-Dog farrusco = new Dog();
-farrusco.DogName = "Farrusco";
-farrusco.AddDog(farrusco.DogName);
+Canil canil1 = new Canil("Canil Municipal", 2);
+Console.WriteLine("nome do canil: {0} e capacidade: {1}", canil1._nomeCanil, canil1._capacidadeMaxima);
 
+Animal farrusco = new Animal("Farrusco", "Cão", "Grande", 1, 23);
+Console.WriteLine("nome: {0}, tipo: {1}, porte: {2}, chip: {3}, peso: {4}", farrusco.Nome, farrusco.tipoAnimal, farrusco.porte, farrusco.chip, farrusco.peso);
+canil1.registarAnimal(farrusco);
 
-Dog bobby = new Dog();
-bobby.DogName = "Bobby";
-bobby.AddDog(bobby.DogName);
+Animal Bobby = new Animal("Bobby", "gato", "pequeno", 2, 7);
+Console.WriteLine("nome: {0}, tipo: {1}, porte: {2}, chip: {3}, peso: {4}", Bobby.Nome, Bobby.tipoAnimal, Bobby.porte, Bobby.chip, Bobby.peso);
+canil1.registarAnimal(Bobby);
 
-farrusco.AdoptDog(farrusco);
-
-/*
-cao.AddDog("Farrusco");
-//Console.WriteLine(cao.Doge[0]);
-cao.AddDog("Bobby");
-Console.WriteLine(cao.);
-Console.WriteLine(cao.Doge[1]);
-
-
-for (int i = 0; i <= 2; i++)
-{
-    Console.WriteLine(cao.Doge[i]);
-}*/
-
+canil1.adotarAnimal(farrusco.chip);
