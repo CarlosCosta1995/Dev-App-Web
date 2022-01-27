@@ -1,0 +1,15 @@
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\bin\Debug\net6.0\Genio_Da_Lampada.exe
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\bin\Debug\net6.0\Genio_Da_Lampada.deps.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\bin\Debug\net6.0\Genio_Da_Lampada.runtimeconfig.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\bin\Debug\net6.0\Genio_Da_Lampada.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\bin\Debug\net6.0\ref\Genio_Da_Lampada.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\bin\Debug\net6.0\Genio_Da_Lampada.pdb
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\obj\Debug\net6.0\Genio_Da_Lampada.csproj.AssemblyReference.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\obj\Debug\net6.0\Genio_Da_Lampada.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\obj\Debug\net6.0\Genio_Da_Lampada.AssemblyInfoInputs.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\obj\Debug\net6.0\Genio_Da_Lampada.AssemblyInfo.cs
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\obj\Debug\net6.0\Genio_Da_Lampada.csproj.CoreCompileInputs.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\obj\Debug\net6.0\Genio_Da_Lampada.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\obj\Debug\net6.0\ref\Genio_Da_Lampada.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\obj\Debug\net6.0\Genio_Da_Lampada.pdb
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Genio_Da_Lampada\Genio_Da_Lampada\obj\Debug\net6.0\Genio_Da_Lampada.genruntimeconfig.cache
