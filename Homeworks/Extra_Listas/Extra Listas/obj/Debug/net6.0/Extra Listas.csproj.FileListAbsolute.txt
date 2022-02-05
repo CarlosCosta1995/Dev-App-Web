@@ -1,0 +1,15 @@
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\bin\Debug\net6.0\Extra Listas.exe
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\bin\Debug\net6.0\Extra Listas.deps.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\bin\Debug\net6.0\Extra Listas.runtimeconfig.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\bin\Debug\net6.0\Extra Listas.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\bin\Debug\net6.0\ref\Extra Listas.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\bin\Debug\net6.0\Extra Listas.pdb
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\obj\Debug\net6.0\Extra Listas.csproj.AssemblyReference.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\obj\Debug\net6.0\Extra Listas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\obj\Debug\net6.0\Extra Listas.AssemblyInfoInputs.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\obj\Debug\net6.0\Extra Listas.AssemblyInfo.cs
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\obj\Debug\net6.0\Extra Listas.csproj.CoreCompileInputs.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\obj\Debug\net6.0\Extra Listas.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\obj\Debug\net6.0\ref\Extra Listas.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\obj\Debug\net6.0\Extra Listas.pdb
+C:\Users\andre\Documents\GitHub\Dev-App-Web\Homeworks\Extra_Listas\Extra Listas\obj\Debug\net6.0\Extra Listas.genruntimeconfig.cache
