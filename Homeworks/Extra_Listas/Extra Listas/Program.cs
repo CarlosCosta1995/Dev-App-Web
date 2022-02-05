@@ -11,7 +11,7 @@
  * notas (com 2 casas decimais; usar função existente) e o número de alunos que
  * tiveram nota acima da média : int acimaDaMedia(float notas[], int tamanho,
  * float media);).*/
-
+/*
 int numeroAlunos = 30;
 float[] notasAlunos = new float[numeroAlunos];
 float notaInserida;
@@ -97,7 +97,7 @@ if (notasAlunos.Length <= numeroAlunos)
 
 resultados(notasAlunos, numeroAlunos);
 Console.WriteLine("A média da turma é de {0} e o número de alunos com nota acima da média foi de {1}.", calcularMedia(notasAlunos), acimaDaMedia(notasAlunos, numeroAlunos, calcularMedia(notasAlunos)));
-
+*/
 
 //===============================  EX 2   ====================================== 
 /* Um treinador de atletismo treina 5 atletas e faz 7 sessões de treino por semana.
@@ -126,8 +126,8 @@ void leMatriz(float[][] temposAtleta, int atletas,int sessoes)
         for (int j = 0; j < temposAtleta[i].Length; j++)
         {
             temposAtleta[i][j] = j;
+            Console.WriteLine(temposAtleta[i][j]);
         }
-        
     }
 }
 
@@ -140,3 +140,67 @@ void escreveMinLinhas(float[][] tempos, int atletas, int sessoes)
 {
 
 }
+
+
+//===============================  EX 3   ======================================
+/*Escreva um programa que permite a inserção de números em dois arrays, a e b,
+com n elementos (n<=20). O programa deve criar um novo array c, tal que c[i] =
+a[i] + b[i], para cada i entre 0 e n-1.*/
+/*
+int[] a = new int[20];
+int[] b = new int[20];
+int[] c = new int[20];
+
+for (int i = 0; i < a.Length; i++)
+{
+    a[i] = i;
+    Console.WriteLine("Valor a:{0} para index:{1}", a[i], i);
+}
+
+Console.WriteLine();
+
+for (int i = 0; i < b.Length; i++)
+{
+    b[i] = i+2;
+    Console.WriteLine("Valor b:{0} para index:{1}", b[i], i);
+}
+
+Console.WriteLine();
+
+for (int i = 0; i < c.Length; i++)
+{
+    c[i] = a[i] + b[i];
+    Console.WriteLine("Valor c:{0} para index:{1}", c[i], i);
+}
+*/
+
+//===============================  EX 4   ======================================
+/*Escreva um programa que permite a inserção de números em dois arrays, a e b,
+com n elementos (n<30). O programa deve calcular e escrever o produto escalar
+dos dois arrays (Dica: Dados os arrays a=(a1,a2,a3,…,an) e b=(b1,b2,b3,…,bn), o
+produto escalar S é S=a1b1+a2b2+a3b3+…+anbn). Teste com n=5; a={5,2,4,7,3},
+b={9,3,5,7,14} (resultado S=162) e n=4; a={-2,3,6,4}, b={2,1,-3,0} (resultado S=-19).*/
+
+/*
+int[] a1 = { 5, 2, 4, 7, 3 };
+int[] a2 = { -2, 3, 6, 4 };
+
+int[] b1 = { 9, 3, 5, 7, 14 };
+int[] b2 = { 2, 1, -3, 0 };
+
+double ProdutoEscalar(int[] a, int[] b, int n)
+{
+    double[] produtoEscalar = new double[30];
+    double Producto = new double();
+    for (int i = 0; i < n; i++)
+    {
+        produtoEscalar[i] = a[i] * b[i];
+        Producto += produtoEscalar[i];
+        Console.WriteLine("producto{0}, a:{1}, b:{2}, total:{3}", produtoEscalar[i], a[i], b[i], Producto);
+    }
+    return Producto;
+}
+
+//int n = int.Parse(Console.ReadLine());
+Console.WriteLine("162 == {0}", ProdutoEscalar(a1, b1, 5));
+Console.WriteLine("-19 == {0}", ProdutoEscalar(a2, b2, 4));*/
