@@ -9,6 +9,7 @@ namespace CarlosCosta_2036114
     public class Costumer
     {
         private string _name;
+        //Member deveria ser bool
         private string _member;
         private string _memberType;
 
@@ -23,17 +24,21 @@ namespace CarlosCosta_2036114
         { get { return _memberType; } 
            set { _memberType = value; }
         }
-
+         
+        //Falta a verificação de ser membro if's (se é ou nao)
         public string isMember()
         {
             return _memberType;
         }
-
+        
+        //Deveria ser um bool
         public void setMember(string x)
         {
             this._member = x;
         }
-
+        
+        //Mudar o tipo de returno para double, acrescentar customer como parametro (tambem),
+        //Verificar o tipo de membro (default == Silver)
         public void Pagamento (double valorPagar)
         {
             if (_memberType == "Premium")
