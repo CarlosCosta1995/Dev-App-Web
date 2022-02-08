@@ -20,38 +20,44 @@ namespace CarlosCosta_2036114
             this._tipoConta = tipoConta;
             this._saldoDaConta = saldoDaConta;
         }
-
+        
+        //Falta fazeruma verificação com if's
         public double LevantarQuantia(double quantiaLevantar)
         {
             _saldoDaConta -= quantiaLevantar;
             Console.WriteLine("Valor levantado {0} e saldo actual {1}", quantiaLevantar, _saldoDaConta);
             return quantiaLevantar;
         }
-
+        
+        
         public double DepositarQuantia(double quantiaDepositar)
         {
             _saldoDaConta += quantiaDepositar;
             Console.WriteLine("Valor depositado {0} e saldo actual {1}", quantiaDepositar, _saldoDaConta);
             return quantiaDepositar;
         }
-
+        
+        //pode ser atraves das propriedades (get e set)
         public void NomeTitularConta()
         {
             Console.WriteLine("O titular da conta, cujo o número da conta {0}, é {1}", _nomeTitular, _numeroDaConta);
         }
-
+        
+        //Deveria returnar um valor
         public void SaldoActual()
         {
             Console.WriteLine("O seu saldo actual é de: {0}", _saldoDaConta);
         }
-
+        
+        //Falta fazer verificação com if's
         public void TransferirQuantia(Conta transferir, Conta recebeTransferencia, double valorTransferir)
         {
             transferir._saldoDaConta -= valorTransferir;
             recebeTransferencia._saldoDaConta += valorTransferir;
             Console.WriteLine("O valor transferido foi de {0}, da conta {1} para a conta {2}", valorTransferir, transferir._numeroDaConta, recebeTransferencia._numeroDaConta);
         }
-
+        
+        //Falta fazer o return, criar uma variavel que va somando o total levantado diariamente.
         public void LevantarQuantiaLimite(double quantia)
         {
             if (quantia <= 300)
