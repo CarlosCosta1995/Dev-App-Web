@@ -1,36 +1,49 @@
 <html language = "pt">
 <head>
+    <link rel="stylesheet" href="./css/main.css"/>
     <title>Teste</title>
     <style>
-        body
-        {
-           align-content: center;
-           text-align: center;
-           background-color: aquamarine;
-           background-repeat: no-repeat;
-           background-image: url("https://static.wikia.nocookie.net/elderscrolls/images/6/64/Imga.jpg/revision/latest/scale-to-width-down/167?cb=20110501053300");
+        .paragraph{
+            color: white;
+            background-color: green;
         }
-        h2
-        {
-            color:rgb(235, 148, 17);
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 5em;
-            
-        }
+      h2,ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+      }
 
-        img
-        {
-            width: 100%;
-            height: auto;
-            margin-top: 15%;
-            align-items: center;
-        }
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      /* Change the link color on hover */
+      li a:hover {
+        background-color: #555;
+        color: white;
+      }
     </style>
+
 </head>
 <body>
+
+    <h2>Vertical Navigation Bar</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+
     <!-- Isto é um comentário!-->
     Isto é o corpo do site!
-    <h1>h1</h1>
+    <h1 id="top">h1</h1>
     <h2>h2</h2>
     <h3>h3</h3>
     <hr>
@@ -103,5 +116,62 @@
         <img src="cat.jpg" alt="Cat/gato" style="width: 80%;">
         <hr>
         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif" alt="gifwalking"/>
-</body>
+
+        <hr>
+
+        <h1 id="header1">Style me via the external mehtod!</h1>
+
+        <p class="paragraph">I would like to be styled with the internal methos, please.</p>
+
+        <button style="background-color: yellow; border-left: 2px, white; border-top: 2px, white; border-bottom: 5px, black; border-right: 5px, black;">Inline Method</button>
+
+        <p id="p1"> Coding Horror! Coding Horror!</p>
+        <p class = "p1"> Our misssionisto combine programming and "human" factors</p>
+
+        <hr>
+        <p class="shout">First sentence from the shout class</p>
+        <p class="special">First sentence from the special class</p>
+        <p class="special shout"> Second sentence from the special class</p>
+
+        <hr>
+        <p class="oddNumbers">Number 1 - I'm a class!</p>
+        <p id="evenNumber2">Number 2 - I'm one ID.</p>
+        <p class="oddNumbers Number3">Number 3 - I'm a class, but cooler!</p>
+        <p id="evenNumber4">Number 4 - I'm another ID.</p>
+        <p class="oddNumbers">Number 5 - I'm a class!</p>
+
+        <hr>
+        <button class="commumbtn unique1">Click Me!</button>
+        <button class="commumbtn unique2"> No, Click Me!</button>
+
+        <hr>
+        <div>
+            <p class="pRed">I'm just a paragraph with red text!</p>
+            <p class="pRed">I'm a smaller paragraph, also with red text!</p>
+            <button style="color: white; background-color: green;">Confirm</button>
+            <button style="color: black; ">Cancel</button>
+        </div>
+        <div class="greenText">
+            <p>I'm a div green text!</p>
+            <div class="greenText">
+                <p>I'm a div with green text and a child div!</p>
+                <p class="pRed">I'm a smaller child div with red text.</p>
+            </div>
+        </div>
+
+        <hr>
+        <a class="external" href="https://www.google.pt/?hl=pt-PT" target="_blank">Google it!</a>
+        
+        <div style="width: 50%; margin-left: 25%;background-color: burlywood;">
+        <p id="pseudo-class">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+        <a href="#top">Go to top!</a>
+    </div>
+    <div id="asd2">
+        <button>Button1</button>
+        <button>Button2</button>
+    </div>
+    <a href="#top" style="float: right;">back to top</a>
+    </body>
 </html>

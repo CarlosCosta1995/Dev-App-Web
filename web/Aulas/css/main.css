@@ -1,0 +1,136 @@
+/* Css StyleSheet */
+        body
+        {
+           align-content: center;
+           text-align: left;
+           background-color: aquamarine;
+           background-repeat: repeat;
+           background-image: url("https://static.wikia.nocookie.net/elderscrolls/images/6/64/Imga.jpg/revision/latest/scale-to-width-down/167?cb=20110501053300");
+        }
+        h2
+        {
+            color:rgb(235, 148, 17);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 5em;
+            
+        }
+
+        img
+        {
+            width: 100%;
+            height: auto;
+            margin-top: 15%;
+            align-items: center;
+        }
+
+        #header1{
+            color:wheat;
+            background-color: red;
+        }
+
+        #p1{
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+
+        .p1{
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+
+        /* Id é container e é usado apenas uma vez (#id)*/
+        /* Classes podem ser usadas vaira vezes (.class)*/
+
+        .special{
+            background-color: yellow;
+            font-weight: bold;
+        }
+        p.shout{
+            color:coral;
+            font-family: cursive;
+        }
+
+        #evenNumber2{
+            color: blue;
+            font-weight: bolder;
+            font-size: 2em;
+        }
+        #evenNumber4{
+            color: black;
+            background-color: green;
+            font-weight: bolder;
+        }
+        .oddNumbers{
+            background-color: coral;
+            color: black;
+            font-weight: bold;
+        }
+        .Number3{
+            font-size: 1.5em;
+        }
+
+        .commumbtn{
+            border-bottom: 2px, black;
+            border-top: 2px, black;
+        }
+
+        .unique1{
+            background-color: black;
+            color: white;
+        }
+
+        .unique2{
+            background-color: yellow;
+        }
+
+        .greenText{
+            color:green;
+            font-weight: bolder;
+            font-size: 1em;
+        }
+        .pRed{
+            color:red;
+            font-weight: bold;
+        }
+        .pRed:first-letter{
+            color:blue;
+            font-weight: bolder;
+        }
+
+        a{
+            font-size: xx-large;
+        }
+        .external
+        {
+            color:rgb(216, 8, 188);
+            text-align: right;
+        }
+        .external:hover
+        {
+            color:blue;
+            background-color: red;
+        }
+        a.external:link
+        {
+            color:green;
+            background-color: white;
+        }
+
+        #pseudo-class:first-letter{
+            color:brown;
+            font-size: 10em;
+        }
+
+        #pseudo-class:first-line{
+            color:red;
+            font-weight: lighter;
+        }
+
+        #asd2{
+            border: 6px solid white;
+            height: 100px;
+            width: 400px;
+            margin: 20px;
+            padding: 20px;
+            background: red;
+        }
