@@ -3,37 +3,53 @@
     <link rel="stylesheet" href="./css/main.css"/>
     <title>Teste</title>
     <style>
-        .paragraph{
+        .paragraph
+        {
             color: white;
             background-color: green;
         }
-      h2,ul {
+      h2#navHead{
+        font-size: large;
+      }
+      
+      ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        width: 200px;
-        background-color: #f1f1f1;
+        background-color: black;
+        display: inline;
+        position: fixed;
+        margin-top: 0;
+        width: 100%;
       }
 
-      li a {
+      li
+      {
+          background-color: black;
+          
+      }
+
+      li a 
+      {
         display: block;
-        color: #000;
+        color: white;
         padding: 8px 16px;
         text-decoration: none;
+        margin-left: 5%;
       }
 
       /* Change the link color on hover */
-      li a:hover {
+      li a:hover 
+      {
         background-color: #555;
         color: white;
       }
     </style>
 
 </head>
-<body>
-
-    <h2>Vertical Navigation Bar</h2>
+<body>    
     <ul>
+    <li><h2 id="navHead">Vertical Navigation Bar</h2></li>
       <li><a href="#home">Home</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -42,7 +58,7 @@
 
 
     <!-- Isto é um comentário!-->
-    Isto é o corpo do site!
+    <p>Isto é o corpo do site!</p>
     <h1 id="home" id="top">h1</h1>
     <h2>h2</h2>
     <h3>h3</h3>
@@ -76,7 +92,7 @@
         </tr>
     </table>
     <hr>
-    <table id="news" style="height: 170px; margin-left: auto; margin-right: auto;" border="1" width="365" cellspacing="22" cellpadding="12">
+    <table id="news" style="height: 170px; margin-left: auto; margin-right: auto;" width="365" cellspacing="22" cellpadding="12">
         <tbody>
         <tr>
         <td style="width: 72.7969px;"><b>Nome</b></td>

@@ -1,0 +1,124 @@
+body
+{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+
+/* ============== Landscape ============ */
+#landscape
+{
+    background-image: url("./img/landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 49%;
+    padding: 20%;
+    margin-left: -2%;
+    margin-top: -2%;
+    text-align: center;
+}
+#landscape button
+{
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(68, 66, 66);
+    border: 0;
+    padding: 1%;
+}
+
+/* ============== Demo ============ */
+#demo
+{
+    width: auto;
+    height: 30%;
+    background-color: white;
+    padding: 2% 2% 2% 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#demo h2
+{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: x-large;
+}
+#demo p
+{
+    width: 95%;
+    text-align: justify;
+    font-family: Helvetica, sans-serif;
+    font-size: medium;
+    margin-left: 2%;
+}
+
+/* ============== HAIR ============ */
+#hair
+{
+    background-image: url("./img/hair.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    width: auto;
+    height: 49%;
+    padding: 20%;
+    margin-left: -2%;
+    margin-top: -2%;
+    text-align: center;
+}
+
+#hair h2
+{
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+/* ============== Texto ============ */
+#texto
+{
+    width: auto;
+    height: 50%;
+    background-color: rgba(2, 2, 29, 0.795);
+    padding: 2% 2% 2% 2%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -1%;
+    text-align: center;
+}
+#texto p
+{
+    width: 25%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    text-align: justify;
+    font-family: Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+/* ============== Foto ============ */
+#foto
+{
+    background-image: url("./img/foto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 49%;
+    padding: 20%;
+    margin-left: -2%;
+    margin-top: -2%;
+    margin-bottom: -2%;
+    text-align: center;
+}
+#foto button
+{
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    padding: 1%;
+}
