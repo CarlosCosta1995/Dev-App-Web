@@ -1,0 +1,136 @@
+/*bootStrap*/
+
+body
+{
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+    align-items: center;
+}
+
+/* ====================== TPC_2 =======================*/
+header 
+{
+    background-image: url("./imgs/post.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 1%;
+}
+header h1
+{
+    margin-top: 2%;
+}
+
+header p
+{
+    margin-bottom: 1%;
+    font-size: large;
+}
+header button
+{
+    border: 1px white;
+    background-color: darkgrey;
+    font-size: x-large;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.WebApp
+{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    align-content: center;
+    text-align: unset;
+    margin-bottom: 0;
+    background-color: aquamarine;
+}
+
+.WebApp h2{
+    text-align: center;
+}
+
+.WebApp p
+{
+    margin-bottom: 10%;
+}
+
+.divLeft
+{
+    width: 25%;
+    margin-left: 25%;
+    float:left;
+}
+
+.divRight
+{
+    width: 25%;
+    margin-right: 25%;
+    float: right;
+}
+
+section
+{
+    width: auto;
+    height: auto;
+    background-color: darkgray;
+    display: inline-block;
+    margin-top: 0;
+    padding: 2%;
+}
+section div{
+    background-color: aqua;
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-left: 10%;
+    padding: 0;
+    text-align: unset;
+}
+
+section div img
+{
+    width:100%;
+}
+
+section div h3,p
+{
+    padding: 2%;
+    text-align: center;
+}
+
+#handle
+{
+    width: 100%;
+    text-align: center;
+}
+
+footer
+{
+    display: flex;
+}
+
+footer div{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    
+}
+
+#Contact
+{
+    background-color: lightblue;
+    color: aliceblue;
+    margin-bottom: 0;
+    float: left;
+}
+#About
+{
+    background-color: black;
+    color:aliceblue;
+    margin-bottom: 0;
+    float: right;
+}
