@@ -1,0 +1,7 @@
+Criar um website que contem:
+- Tema Livre
+- 3 paginas web [minimo];
+- 1 header
+- 1 footer
+- 1 Navigation bar
+- 1 login / Subscription
