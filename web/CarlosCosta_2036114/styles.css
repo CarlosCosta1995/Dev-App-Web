@@ -39,12 +39,6 @@ body
       left: -300px;
     }
   }
-  
-  @media (min-width: 992px) {
-    #main {
-      margin-left: 100px;
-    }
-  }
 
   /*--------------------------------------------------------------
   # Navigation Menu
