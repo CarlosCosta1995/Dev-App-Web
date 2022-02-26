@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Testing</title>
+</head>
+<script>
+    var element = parseInt(document.getElementById("pCount").value, 10)
+
+    function addFunction(){
+        element = isNaN(element) ? 0 : element
+        element++;
+        document.getElementById("pCount").value = element;
+        document.getElementById("pCount").style.backgroundColor = "green";
+    }
+    function decreaseFunction(){
+        element = isNaN(element) ? 0 : element
+        element--;
+        document.getElementById("pCount").value = element;
+        document.getElementById("pCount").style.backgroundColor = "red";
+    }
+    function resetFunction(){
+        element = isNaN(element) ? 0 : element
+        element = 0;
+        document.getElementById("pCount").value = element;
+        document.getElementById("pCount").style.backgroundColor =  "blue";
+    }
+    /*
+    function backgroundChange(element){
+        var color;
+        if(element.value > 0){
+            document.getElementById("pCount").style.backgroundColor = "green";
+        }
+        else if(element.value < 0){
+            document.getElementById("pCount").style.backgroundColor = "red";
+        }
+        else{
+            document.getElementById("pCount").style.backgroundColor =  "blue";
+        }
+    }*/
+
+    document.getElementById("addButton").onclick = function (){
+        addFunction()
+        //backgroundChange()
+    };
+
+    document.getElementById("decreaseButton").onclick = function(){
+        decreaseFunction()
+        //backgroundChange()
+    };
+
+    document.getElementById("resetButton").onclick = function(){
+        resetFunction()
+        //backgroundChange()
+    };
+
+</script>
+<body>
+    <!-- 
+    Fazer um contador usando html, css e js (ver imagem). 
+    Criar 3 botões, um que adiciona um valor no <p>, 
+    outro que remove um valor e outro botão chamado reset que coloca o valor a 0. 
+    Depois, centrar o counter, pôr bonito (manipulando o tipo de letra e tamanho) 
+    e alterar a cor do valor do counter quando é positivo (para verde) 
+    e quando o valor é negativo (para vermelho)
+
+    dica: têm que ver o valor atual que está na tag (
+    document.getElementById("something").textContent)
+    atualizar o valor e cores de acordo com o valor (ifs)
+    -->
+
+    <h1>COUNTER</h1>
+    <input type="text" id="pCount" value="0"></input>
+    <button type="button" id="addButton" onclick="addFunction()">Add</button>
+    <button type="button" id="decreaseButton" onclick="decreaseFunction()">Decrease</button>
+    <button type="button" id="resetButton" onclick="resetFunction()">Reset</button>
+</body>
+</html>
