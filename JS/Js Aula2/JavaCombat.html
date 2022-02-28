@@ -1,0 +1,249 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <style>
+        body{
+        background-color: #cecece;
+        }
+
+        h2{
+        color: #093426;
+        }
+        #healthBar {
+        height: 30px;
+        width: 500px;
+        background-color:lightgrey;
+        border-radius: 23px;
+        border: 2px solid grey;
+        }
+
+        #myHealth, #myHealth2 {
+        height:30px;
+        width: 100%;
+        background-color:green;
+        border-radius: 23px;
+        -webkit-animation: flash linear 2s infinite;
+        animation: flash linear 2s infinite;
+        text-align: center;
+        }
+
+        @-webkit-keyframes flash {
+            0% { opacity: 1; } 
+            50% { opacity: .1; } 
+            100% { opacity: 1; }
+        }
+        @keyframes flash {
+            0% { opacity: 1; } 
+            50% { opacity: .1; } 
+            100% { opacity: 1; }
+        
+        }
+        </style>
+
+        <script>
+
+        /*$(document).ready(function() {
+        // executes when HTML-Document is loaded and DOM is ready
+        alert("document is ready");
+        });*/
+
+
+            /* ==================== Player 1 ===================== */
+
+            function player1Hit(){
+                var value2 = document.getElementById("myHealth2").clientWidth;
+                var at2 = document.getElementById("myHealth2").style.width;
+
+                if(value2 <= 500 && value2 >= 0){
+                    at2 = document.getElementById("myHealth2").style.width = value2 - 20;
+
+                    if(value2 <= 100){
+                    color = document.getElementById("myHealth2").style.background = "red";
+                    }
+                    else if(value2 <= 300){
+                        color = document.getElementById("myHealth2").style.background = "yellow";
+                    }
+                    else {
+                        color = document.getElementById("myHealth2").style.background = "green";
+                    } 
+                }
+                if( value2 == 0){
+                    at2 = document.getElementById("myHealth2").style.width = 0;
+                    alert("Player 1 kill player 2!");
+                }
+                //changeColor(at);
+            }
+
+            function player1SupperAttack(){
+                var value2 = document.getElementById("myHealth2").clientWidth;
+                var at2 = document.getElementById("myHealth2").style.width;
+                alert("Player 1 used Supper attack!");
+                if(value2 <= 500 && value2 >= 0){
+                    at2 = document.getElementById("myHealth2").style.width = value2 - 40;
+
+                    if(value2 <= 100){
+                    color = document.getElementById("myHealth2").style.background = "red";
+                    }
+                    else if(value2 <= 300){
+                        color = document.getElementById("myHealth2").style.background = "yellow";
+                    }
+                    else {
+                        color = document.getElementById("myHealth2").style.background = "green";
+                    } 
+                }
+                if( value2 == 0){
+                    at2 = document.getElementById("myHealth2").style.width = 0;
+                    alert("Player 1 kill player 2!");
+                }
+                //changeColor(at);
+            }
+
+            function player1Heal(){
+                var value = document.getElementById("myHealth").clientWidth;
+                var at = document.getElementById("myHealth").style.width = value + 20;
+                
+                if(value <= 500 && value >= 0){
+                    at = document.getElementById("myHealth").style.width = value + 20;
+                    if(value <= 100){
+                    color = document.getElementById("myHealth").style.background = "red";
+                    }
+                    else if(value <= 300){
+                        color = document.getElementById("myHealth").style.background = "yellow";
+                    }
+                    else {
+                        color = document.getElementById("myHealth").style.background = "green";
+                    }
+                }
+                if( value >= 500){
+                    at = document.getElementById("myHealth").style.width = 500;
+                    healPicture();
+                    alert("Player 1 are at full health!");
+                }
+               // changeColor(at);
+            }
+
+            /* ==================== Player 2 ===================== */
+        
+            function player2Hit(){
+                var value = document.getElementById("myHealth").clientWidth;
+                var at = document.getElementById("myHealth").style.width;
+
+                if(value <= 500 && value >= 0){
+                    at = document.getElementById("myHealth").style.width = value - 20;
+                    if(value <= 100){
+                    color = document.getElementById("myHealth").style.background = "red";
+                    }
+                    else if(value <= 300){
+                        color = document.getElementById("myHealth").style.background = "yellow";
+                    }
+                    else {
+                        color = document.getElementById("myHealth").style.background = "green";
+                    }
+                }
+                if( value == 0){
+                    at = document.getElementById("myHealth").style.width = 0;
+                    alert("Palyer 2 kill player 1!");
+                }
+                //changeColor(at);
+            }
+
+            function player2SupperAttack(){
+                var value = document.getElementById("myHealth").clientWidth;
+                var at = document.getElementById("myHealth").style.width;
+                alert("Palyer 2 used Supper attack!");
+                if(value <= 500 && value >= 0){
+                    at = document.getElementById("myHealth").style.width = value - 40;
+                    if(value <= 100){
+                    color = document.getElementById("myHealth").style.background = "red";
+                    }
+                    else if(value <= 300){
+                        color = document.getElementById("myHealth").style.background = "yellow";
+                    }
+                    else {
+                        color = document.getElementById("myHealth").style.background = "green";
+                    }
+                }
+                if( value == 0){
+                    at = document.getElementById("myHealth").style.width = 0;
+                    alert("Palyer 2 kill player 1!");
+                }
+                //changeColor(at);
+            }
+
+            function player2Heal(){
+                var value2 = document.getElementById("myHealth2").clientWidth;
+                var at2 = document.getElementById("myHealth2").style.width = value2 + 20;
+                
+                if(value2 <= 500 && value2 >= 0){
+                    at2 = document.getElementById("myHealth2").style.width = value2 + 20;
+                    if(value2 <= 100){
+                    color = document.getElementById("myHealth2").style.background = "red";
+                    }
+                    else if(value2 <= 300){
+                        color = document.getElementById("myHealth2").style.background = "yellow";
+                    }
+                    else {
+                        color = document.getElementById("myHealth2").style.background = "green";
+                    }
+                }
+                if( value2 >= 500){
+                    at2 = document.getElementById("myHealth2").style.width = 500;
+                    healPicture();
+                    alert("Player 2 are at full health!");
+                }
+                //changeColor(at2);
+            }
+            /*
+            function changeColor(witdh){
+                if(witdh <= 100){
+                    color = document.getElementById("myHealth2").style.background = "red";
+                }
+                else if(witdh <= 300){
+                    color = document.getElementById("myHealth2").style.background = "yellow";
+                }
+                else {
+                    color = document.getElementById("myHealth2").style.background = "green";
+                }
+            } */
+            
+            function attackPicture(){ 
+            var pic = "https://c.tenor.com/y65L7GWm11kAAAAd/yhwach-attack.gif";
+            document.getElementById("attackImg").src = pic.replace('1x1', '200x200');
+            }
+
+            function healPicture(){ 
+            var pic = "https://c.tenor.com/AmtZ-kCFfGEAAAAC/yhwach-attack.gif";
+            document.getElementById("attackImg").src = pic.replace('1x1', '200x200');
+            }
+
+            function player1SupperAttackImg(){ 
+            var pic = "https://c.tenor.com/jsMmSle2NAIAAAAC/yhwach.gif";
+            document.getElementById("attackImg").src = pic.replace('1x1', '200x200');
+            }
+
+            function player2SupperAttackImg(){ 
+            var pic = "https://c.tenor.com/QLhW25buAroAAAAC/yhwach-power-up.gif";
+            document.getElementById("attackImg").src = pic.replace('1x1', '200x200');
+            }
+        </script>
+    </head>
+    <body style="background-color:lightgrey;">
+        <img id="attackImg" src="https://c.tenor.com/S2id-PjsGiEAAAAC/anime-night.gif" style="margin-left: 25%;"/>
+        <hr>
+        <h2>Player 1</h2>
+        <div id="healthBar">
+        <div id="myHealth" id="p1"><strong>Critical</strong></div>
+        <button onclick="player1Hit(), attackPicture()"> Attack </button>
+        <button onclick="player1SupperAttack(), player1SupperAttackImg()"> Supper Attack </button>
+        <button onclick="player1Heal()"> Heal </button>
+
+        <h2>Player 2</h2>
+        <div id="healthBar">
+        <div id="myHealth2" id="p2"><strong>Critical</strong></div>
+        <button  onclick="player2Hit(), attackPicture()"> Attack </button>
+        <button  onclick="player2SupperAttack(), player2SupperAttackImg()"> Supper Attack </button>
+        <button onclick="player2Heal()"> Heal </button>
+
+    </body>
+</html> 
