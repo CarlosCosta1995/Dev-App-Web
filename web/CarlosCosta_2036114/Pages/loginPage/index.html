@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <title>CodePen - Fluent Design Login form</title>
   <link rel="stylesheet" href="./style.css">
-
+  <!-- validade scripts  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -12,16 +14,16 @@
 <div class="form">
   <form class="register-form acrylic">
     <span>Sign Up</span>
-    <input type="text" placeholder="Email"/>
-    <input type="password" placeholder="Password"/>
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Password" required minlength="18"/>
     <button id="SignUp">Go</button>
     <p class="message"><a href="#">I have Account</a></p>
   </form>
-  <form class="login-form acrylic">
+  <form class="login-form acrylic" action="../../index.html">
     <span>Login to your account</span>
-    <input type="text" placeholder="Email"/>
-    <input type="password" placeholder="Password"/>
-    <button id="SignIn">Login</button>
+    <input id="email" type="email" placeholder="Email" required/>
+    <input id="pw" type="password" placeholder="Password" required minlength="4" maxlength="20"/>
+    <input type="submit" value="Submit" id="SignIn" ></input>
     <p class="message"><a href="#">Create Account</p>
   </form>
 </div>

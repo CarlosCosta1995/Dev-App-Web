@@ -114,11 +114,11 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-}
+}*/
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -132,14 +132,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px;
   overflow-y: auto;
 }
-@media (max-width: 992px) {
+ /* @media (max-width: 992px) {
   #header {
-    width: 300px;
+    width: 10%;
     background: #fff;
     border-right: 1px solid #e6e9ec;
     left: -300px;
   }
-}
+}  */
 
 /*@media (min-width: 992px) {
   #main {
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Navigation 
 */
 .nav-menu {
   padding: 0;
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 5px 0 7px;
   color: #45505b;
 }
-@media (min-width: 992px) {
+ @media (min-width: 50px) {
   .nav-menu a, .nav-menu a:focus {
     width: 56px;
   }
@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     color: #fff;
   }
-}
+} 
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
   color: #fff;
   background: #0563bb;
@@ -212,10 +212,11 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/**
+/*=================================
 * Mobile Navigation 
-*/
-.mobile-nav-toggle {
+===================================*/
+
+/* .mobile-nav-toggle {
   position: fixed;
   right: 10px;
   top: 10px;
@@ -243,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
   background-color: #0563bb;
-}
+} */ 
 
 /*--------------------------------------------------------------
 # Welcome Section
@@ -550,6 +551,12 @@ section {
   background: #fff;
   border: 2px solid #0563bb;
 }
+
+/*--------------------------------------------------------------
+# Vertical Time Line
+--------------------------------------------------------------*/
+
+
 
 /*--------------------------------------------------------------
 # Portfolio
