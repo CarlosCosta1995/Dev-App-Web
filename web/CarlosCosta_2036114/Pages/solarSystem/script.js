@@ -30,7 +30,7 @@ $(window).load(function(){
     $(this).addClass('active');
     e.preventDefault();
   });
-
+  
   $(".set-view").click(function() { body.toggleClass("view-3D view-2D"); });
   $(".set-zoom").click(function() { body.toggleClass("zoom-large zoom-close"); });
   $(".set-speed").click(function() { setView("scale-stretched set-speed"); });
