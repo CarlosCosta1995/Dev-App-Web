@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+    
+    <!--- Vue JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0"></script>
+</head>
+<body>
+    <div class="app">
+        <h1>Contact US</h1>
+        <h3>Name</h3>
+        <input v-model="Name" placeholder="Your Name" value="Your Name">
+        <br>
+        <h3>Email address</h3>
+        <input v-model="Email" placeholder="email@example.com" value="email@example.com">
+        <br>
+        <h3>Gender</h3>
+        <input type="radio" v-model="picked" id="Male" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" v-model="picked" id="Female" value="Female">
+        <label for="Female">Female</label>
+        <br>
+        <h3>From where did you hear about us?</h3>
+        <input v-model="message" placeholder="">
+        <br>
+        <h3>You are a:</h3>
+        <select v-model="selected">
+            <option disable value="">Please select one</option>
+            <option>Designer</option>
+            <option>Gragiphi Designer</option>
+            <option>Manager</option>
+            <option>Company CEO</option>
+        </select>
+        <br>
+        <h3>Which of your service are you interested in?</h3>
+        <input type="checkbox" v-model="checkedNames" value="Online Test">
+        <label for="Online Test">Online Test</label>
+        <input type="checkbox" v-model="checkedNames" value="Paper Based Tests">
+        <label for="Paper Based Tests">Paper Based Tests</label>
+        <input type="checkbox" v-model="checkedNames"value="Customized Tests">
+        <label for="Customized Tests">Customized Tests</label>
+        <br>
+        <h3>Your message</h3>
+        <input type="text" size=" 50" v-model="mensagem">
+        <br>
+        <h3>How satisfied are you with our service?</h3>
+        <input type="range" min="0" max="10" value="50" v-model="satisfaction">
+        <br>
+        <input type="checkbox" v-model="Aggrement" value="Aggrement" v-model="Aggrement">
+        <label for="Aggrement">Agree to Terms & Conditions</label>
+        <br>
+        <button>Submit</button>
+    </div>
+    
+    <div class="app">
+        <h3>Data sent:</h3>
+        <ul>
+            <li>Name: {{Name}}}</li>
+            <li>Email: {{Email}}}</li>
+            <li>Gender: {{picked}}}</li>
+            <li>Refer: {{message}}}</li>
+            <li>Profession: {{selected}}}</li>
+            <li>Interested: {{checkedNames}}}</li>
+            <li>Message: {{mensagem}}}</li>
+            <li>Satisfaction: {{satisfaction}}}</li>
+            <li>Terms: {{Aggrement}}}</li>
+        </ul>
+    </div>
+
+    <script>
+        new Vue({
+            el: '.app',
+            data:{
+               Name: '',
+               Email: '',
+               picked: '',
+               message: '',
+               selected: '',
+               checkedNames: [],
+               mensagem: '',
+               satisfaction: '',
+               Aggrement: '',
+            }
+        });
+    </script>
+</body>
+</html>
