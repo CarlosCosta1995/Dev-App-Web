@@ -95,18 +95,28 @@
             </thead>
             <tbody>
                 <tr v-for="(item, index) in itemsList">
-                    <td class="tg-0lax">{{item.quantity}}</td>
-                    <td class="tg-0lax">{{item.itemName}}</td>
                     <td class="tg-0lax">
-                        <button type="button" class="btn btn-success" @click="addItem">Edit</button>
-                        <button type="button" class="btn btn-success" @click="addItem" v-show="edit == true">Save</button>
-                        <button type="button" class="btn btn-danger" @click="removeItem(itemsList.index)">Delete</button>
+                        <!-- Span para mostrar o item.quantity, input para mostrar alteração. Caso contrario mostra os dois ao mesmo tempo!-->
+                        <span v-show="editable == false">{{ item.quantity }}</span>
+                        <intput type="text" v-show="editable == true" v-model="item.quantity" placeholder="item.quantity" class="form-control">{{ item.quantity }}</intput>
+                    </td>
+                    <td class="tg-0lax">
+                        <!-- Span para mostrar o item.itemName, input para mostrar alteração. Caso contrario mostra os dois ao mesmo tempo!-->
+                        <span v-show="editable == false">{{ item.itemName }}</span>
+                        <intput type="text" v-show="editable == true" v-model="item.itemName" placeholder="item.itemName" class="form-control">{{ item.itemName }}</intput>
+                    </td>
+                    <td class="tg-0lax">
+                        <button type="button" class="btn btn-success" @click="editItem(item)" v-show="editable == false">Edit</button>
+                        <button type="button" class="btn btn-success" @click="saveItem(item)" v-show="editable == true">Save</button>
+                        <button type="button" class="btn btn-danger" @click="removeItem(item.index)">Delete</button>
                     </td>
                 </tr>
                 <!-- Criar um tr que mostra quando carregar no edit-->
-                <tr v-if="editable == true">
-                    <td class="tg-0lax"></td>
-                </tr>
+                <!--<tr v-if="editable == true">
+                    <td class="tg-0lax"><intput v-model="item.quantity"></intput></td>
+                    <td class="tg-0lax"><intput v-model="item.itemName"></intput></td>
+                    
+                </tr>-->
             </tbody>
         </table>
 
@@ -128,28 +138,34 @@
         new Vue({
             el: "#shop",
             data: {
-                quantityIN: 0,
-                itemNameIN: '',
+                quantityIN: '',
+                itemNameIN: "",
+                editable: false,
                 itemsList: [
                     {
                         quantity: 3,
                         itemName: "pao",
+                        editable: false,
                     }
                 ],
-                editable: false,
+                
             },
             methods: {
                 addItem: function () {
                     this.itemsList.push({
                         quantity: this.quantityIN,
                         itemName: this.itemNameIN,
+                        editable: false,
                     });
                 },
                 removeItem: function (index) {
                     this.itemsList.splice(index, 1);
                 },
-                edit: function(itemName){
-                    if()
+                editItem: function(item){
+                   this.editable = true;
+                },
+                saveItem: function(item){
+                    this.editable = false;
                 }
             }
         });
