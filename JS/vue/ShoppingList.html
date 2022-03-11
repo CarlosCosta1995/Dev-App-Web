@@ -97,17 +97,17 @@
                 <tr v-for="(item, index) in itemsList">
                     <td class="tg-0lax">
                         <!-- Span para mostrar o item.quantity, input para mostrar alteração. Caso contrario mostra os dois ao mesmo tempo!-->
-                        <span v-show="editable == false">{{ item.quantity }}</span>
-                        <input type="text" v-show="editable == true" v-model="item.quantity" placeholder="item.quantity" class="form-control"></input>
+                        <span v-show="!item.editable">{{ item.quantity }}</span>
+                        <input type="text" v-show="item.editable" v-model="item.quantity" placeholder="item.quantity" class="form-control"></input>
                     </td>
                     <td class="tg-0lax">
                         <!-- Span para mostrar o item.itemName, input para mostrar alteração. Caso contrario mostra os dois ao mesmo tempo!-->
-                        <span v-show="editable == false">{{ item.itemName }}</span>
-                        <input type="text" v-show="editable == true" v-model="item.itemName" placeholder="item.itemName" class="form-control"></input>
+                        <span v-show="!item.editable">{{ item.itemName }}</span>
+                        <input type="text" v-show="item.editable" v-model="item.itemName" placeholder="item.itemName" class="form-control"></input>
                     </td>
                     <td class="tg-0lax">
-                        <button type="button" class="btn btn-success" @click="editItem(item)" v-show="editable == false">Edit</button>
-                        <button type="button" class="btn btn-success" @click="saveItem(item)" v-show="editable == true">Save</button>
+                        <button type="button" class="btn btn-success" @click="editItem(item)" v-show="!item.editable">Edit</button>
+                        <button type="button" class="btn btn-success" @click="saveItem(item)" v-show="item.editable">Save</button>
                         <button type="button" class="btn btn-danger" @click="removeItem(item.index)">Delete</button>
                     </td>
                 </tr>
@@ -157,7 +157,13 @@
                         itemName: this.itemNameIN,
                         editable: false,
                     });
+                    this.clearInput();
                 },
+                clearInput: function(){
+                    this.quantityIN = '';
+                    this.itemNameIN = '';
+                },
+
                 removeItem: function (index) {
                     this.itemsList.splice(index, 1);
                 },
