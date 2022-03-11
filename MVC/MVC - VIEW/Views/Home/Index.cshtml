@@ -1,0 +1,32 @@
+﻿<!--- Sintax razor -->
+@model Ficha10.Models.Characters;
+@{
+    ViewData["Title"] = "Home Page";
+    var name = "Ola!"; /*Variavel Criada*/
+}
+<!--- Sintax Html + CSS -->
+<div class="text-center">
+    <h1 class="display-4">Hello World!</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div class="text-center">
+    <h1 class="display-4">Data de Hoje!</h1>
+    <p>Mostrar a data e hora de hoje: @DateTime.Now</p>
+    <h3>@name</h3>
+
+    <ul>
+        @foreach (var character in Model.CharactersList)
+        {
+          <li>
+              @Html.DisplayFor(modelcharacter => character.Id)
+              @Html.DisplayFor(modelcharacter => character.Name)
+              @Html.DisplayFor(modelcharacter => character.Gender)
+              @Html.DisplayFor(modelcharacter => character.Born)
+              @Html.CheckBoxFor(modelcharacter => character.Jedi)
+
+              |@Html.ActionLink("Edit", "Delete", new { Id = character.Id });
+
+          </li>
+        }
+    </ul>
+</div>

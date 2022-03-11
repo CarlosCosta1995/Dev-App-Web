@@ -1,0 +1,23 @@
+﻿@model Ficha10.Models.IEmployees;
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+<div class="text-center">
+    <h1 class="display-4">Data de Hoje!</h1>
+    <p>Mostrar a data e hora de hoje: @DateTime.Now</p>
+
+    <ul>
+        @foreach (var emp in Model.EmployeesList)
+        {
+          <li>
+              @Html.DisplayFor(modelcharacter => emp.FirstName)
+              @Html.DisplayFor(modelcharacter => emp.LastName)
+
+          </li>
+        }
+    </ul>
+</div>
