@@ -102,7 +102,7 @@
                     </td>
                     <td class="tg-0lax">
                         <!-- Span para mostrar o item.itemName, input para mostrar alteração. Caso contrario mostra os dois ao mesmo tempo!-->
-                        <span v-show="!item.editable">{{ item.itemName }}</span>
+                        <span v-show="!item.editable">{{ item.itemName }}</span><!-- !(significa quando/tem valor falso ou negativo)-->
                         <input type="text" v-show="item.editable" v-model="item.itemName" placeholder="item.itemName" class="form-control"></input>
                     </td>
                     <td class="tg-0lax">
