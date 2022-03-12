@@ -27,3 +27,32 @@ C:\Users\Net15\Desktop\Requalificar\Dev-App-Web\Dev-App-Web\MVC\MVC - VIEW\obj\D
 C:\Users\Net15\Desktop\Requalificar\Dev-App-Web\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\JSONFile\characters.json
 C:\Users\Net15\Desktop\Requalificar\Dev-App-Web\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\JSONFile\employee.json
 C:\Users\Net15\Desktop\Requalificar\Dev-App-Web\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\JSONFile\employees.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\appsettings.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\JSONFile\characters.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\JSONFile\employee.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\JSONFile\employees.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\MVC - VIEW.staticwebassets.runtime.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\MVC - VIEW.exe
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\MVC - VIEW.deps.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\MVC - VIEW.runtimeconfig.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\MVC - VIEW.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\ref\MVC - VIEW.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\bin\Debug\net6.0\MVC - VIEW.pdb
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\MVC - VIEW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\MVC - VIEW.AssemblyInfoInputs.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\MVC - VIEW.AssemblyInfo.cs
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\MVC - VIEW.csproj.CoreCompileInputs.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\MVC - VIEW.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\MVC - VIEW.RazorAssemblyInfo.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\MVC - VIEW.RazorAssemblyInfo.cs
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\scopedcss\bundle\MVC - VIEW.styles.css
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\scopedcss\projectbundle\MVC - VIEW.bundle.scp.css
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\MVC - VIEW.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\ref\MVC - VIEW.dll
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\MVC - VIEW.pdb
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\MVC - VIEW.genruntimeconfig.cache
+C:\Users\andre\Documents\GitHub\Dev-App-Web\MVC\MVC - VIEW\obj\Debug\net6.0\MVC - VIEW.csproj.AssemblyReference.cache

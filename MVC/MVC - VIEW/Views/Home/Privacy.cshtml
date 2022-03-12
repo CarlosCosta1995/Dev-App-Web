@@ -7,17 +7,84 @@
 <p>Use this page to detail your site's privacy policy.</p>
 
 <div class="text-center">
-    <h1 class="display-4">Data de Hoje!</h1>
+    <!--<h1 class="display-4">Data de Hoje!</h1>
     <p>Mostrar a data e hora de hoje: @DateTime.Now</p>
 
     <ul>
         @foreach (var emp in Model.EmployeesList)
         {
           <li>
+              @Html.DisplayFor(modelcharacter => emp.UserId)
               @Html.DisplayFor(modelcharacter => emp.FirstName)
               @Html.DisplayFor(modelcharacter => emp.LastName)
-
+              @Html.DisplayFor(modelcharacter => emp.JobTitle)
+              @Html.DisplayFor(modelcharacter => emp.Region)
+              @Html.DisplayFor(modelcharacter => emp.PhoneNumber)
+              @Html.DisplayFor(modelcharacter => emp.EmailAddress)
+              @Html.DisplayFor(modelcharacter => emp.EmployeeCode)
           </li>
         }
-    </ul>
+    </ul>-->
+  <table class="table table-dark">
+      <thead>
+        <tr>
+            <th>
+                <label>Search Employee</label>
+                <input type="text" class="form-control"/>
+            </th>
+        </tr>
+        <tr>
+          <th scope="col">User Id</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Region</th>
+          <th scope="col">Job Title</th>
+          <th scope="col">Phone Number</th>
+          <th scope="col">Email Address</th>
+          <th scope="col">Employee Code</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+          @foreach (var emp in Model.EmployeesList)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelcharacter => emp.UserId)</td>
+                <td>@Html.DisplayFor(modelcharacter => emp.FirstName)</td>  
+                <td>@Html.DisplayFor(modelcharacter => emp.LastName)</td>
+                <td>@Html.DisplayFor(modelcharacter => emp.JobTitle)</td>
+                <td>@Html.DisplayFor(modelcharacter => emp.Region)</td>
+                <td>@Html.DisplayFor(modelcharacter => emp.PhoneNumber)</td>
+                <td>@Html.DisplayFor(modelcharacter => emp.EmailAddress)</td>
+                <td>@Html.DisplayFor(modelcharacter => emp.EmployeeCode)</td> 
+                <td>
+                    <button type="button" class="btn btn-success" onclick="">Edit</button>
+                    <button type="button" class="btn btn-success" onclick="">Save</button>
+                    <button type="button" class="btn btn-success" onclick="">Delete</button>
+                </td>
+            </tr>
+        }
+      </tbody>
+  </table>
+      <div>
+        <label>User Id</label>
+        <input class="form-control" type="text"/>
+
+        <label>Name</label>
+        <input class="form-control" type="text"/>
+
+        <br>
+        <button type="button" class="btn btn-primary">Add Employee</button>
+    </div>
 </div>
+
+<!-- Class Employee
+        public int UserId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string JobTitle { get; set; }
+        public string Region { get; set; }
+        public string PhoneNumber { get; set; }
+        public string EmailAddress { get; set; }
+        public string EmployeeCode { get; set; }
+-->

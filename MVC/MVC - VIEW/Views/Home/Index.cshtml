@@ -12,7 +12,7 @@
 <div class="text-center">
     <h1 class="display-4">Data de Hoje!</h1>
     <p>Mostrar a data e hora de hoje: @DateTime.Now</p>
-    <h3>@name</h3>
+    <!--<h3>@name</h3>
 
     <ul>
         @foreach (var character in Model.CharactersList)
@@ -24,9 +24,75 @@
               @Html.DisplayFor(modelcharacter => character.Born)
               @Html.CheckBoxFor(modelcharacter => character.Jedi)
 
-              |@Html.ActionLink("Edit", "Delete", new { Id = character.Id });
+              @Html.ActionLink("Edit", "Delete", new { Id = character.Id });
 
           </li>
         }
-    </ul>
+    </ul>-->
+
+    <table class="table table-dark">
+      <thead>
+        <tr>
+            <th>
+                <label>Search a Character</label>
+            </th>
+            <th>
+                <input type="text" class="form-control"/>
+            </th>
+        </tr>
+        <tr>
+          <th scope="col">User Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Born</th>
+          <th scope="col">Jedi</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+          @foreach (var character in Model.CharactersList)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelcharacter => character.Id)</td>
+                <td>@Html.DisplayFor(modelcharacter => character.Name)</td>  
+                <td>@Html.DisplayFor(modelcharacter => character.Gender)</td>
+                <td>@Html.DisplayFor(modelcharacter => character.Born)</td>
+                <td>@Html.DisplayFor(modelcharacter => character.Jedi)</td>
+                <td>
+                    <!--Edit Button [Boostrap Style]-->
+                    <!-- @Html.ActionLink("Nome do Link", "nome do Endpoint", "Nome do Controller", null, new { @class = "CSS do Botao no Boostrap" }) -->
+                    @Html.ActionLink("Edit", "PostCharacters", "Characters", null, new { @class = "btn btn-primary btn-large" })
+                    
+                        <!--<input type="submit" value="button @Model.CharactersList" />-->
+                       <!--<a href='@Url.Action("Action", "Controller", new {referenceId = Model.CharactersList, type = Model.CharactersList.Find(e => e.Id == character.Id) })>-->
+                    
+
+
+                    <!--Put Button [Should it be a submmit for a form?]-->
+                    <!--<button class="btn btn-success" onclick=@Url.Action("PutCharacters", "Characters", new { @class = "btn btn-success" })>Put</button>-->
+                    
+                    <!--Save Button-->
+                    <button type="button" class="btn btn-success" onclick="">Save</button>
+
+                    <!--Delete Button-->
+                    <!--<button type="button" class="btn btn-success" onclick="">Delete</button>-->
+                    @using (Html.BeginForm("DeleteCharacters", "Characters", new { Id = Model.CharactersList.Find(user => user.Id == character.Id) }))
+                    {
+                        <input type="submit" value="Delete Character" onclick = "return confirm('Are you sure you want to delete the member?');" />
+                    }
+                </td>
+            </tr>
+        }
+      </tbody>
+  </table>
+    <div>
+        <label>User Id</label>
+        <input class="form-control" type="text"/>
+
+        <label>Name</label>
+        <input class="form-control" type="text"/>
+
+        <br>
+        <button type="button" class="btn btn-primary">Add new character</button>
+    </div>
 </div>
