@@ -1,24 +1,40 @@
 <template>
   <div class="about">
     <!-- partial:index.partial.html -->
-    <div class="login-page">
-    <div class="form">
+
+    <form class="register-form acrylic">
+        <span>Sign Up</span><br>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required minlength="4" maxlength="20" />
+        <button id="SignUp" @click="alert()">Go</button>
+        <p class="message"><a href="#">I have Account</a></p>
+      </form>
+      <hr>
+      <form class="login-form acrylic" action="../../index.html">
+        <span>Login to your account</span><br>
+        <input id="email" type="email" placeholder="Email" required/>
+        <input id="pw" type="password" placeholder="Password" required minlength="4" maxlength="20"/>
+        <input type="submit" value="Submit" id="SignIn"/>
+        <p class="message"><a href="#">Create Account</a></p>
+      </form>
+
+    <!--<div class="form">
       <form class="register-form acrylic">
         <span>Sign Up</span>
         <input type="email" placeholder="Email" required />
         <input type="password" placeholder="Password" required minlength="18"/>
-        <button id="SignUp">Go</button>
+        <button id="SignUp" onclick="signupRequest()">Go</button>
         <p class="message"><a href="#">I have Account</a></p>
       </form>
+
       <form class="login-form acrylic" action="../../index.html">
         <span>Login to your account</span>
         <input id="email" type="email" placeholder="Email" required/>
         <input id="pw" type="password" placeholder="Password" required minlength="4" maxlength="20"/>
         <input type="submit" value="Submit" id="SignIn" />
         <p class="message"><a href="#">Create Account</a></p>
-      </form>
-    </div>
-    <!-- partial:index.partial.html -->
+      </form>-->
+    <!-- partial:index.partial.html 
     <div class="tattoine">
       <div class="bb-8">
         <div class="head">
@@ -45,7 +61,7 @@
       </div>
     <div class="land"></div>
     </div>
-  </div>
+  </div>-->
   </div>
 </template>
 
@@ -71,10 +87,14 @@ export default {
           error => {
             let errorResponse = JSON.parse(error.message);
             this.errorMessage = errorResponse.error.message;
+            console.log(this.errorResponse);
           }
         );
         }
       },
+      f(){
+        alert(this.Email)
+      }
     }
 </script>
 

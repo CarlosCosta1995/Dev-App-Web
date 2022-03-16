@@ -1,55 +1,3 @@
-<template>
-  <div class="LogRegister">
-    <!-- partial:index.partial.html -->
-    <div class="login-page">
-    <div class="form">
-      <form class="register-form acrylic">
-        <span>Sign Up</span>
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required minlength="18"/>
-        <button id="SignUp">Go</button>
-        <p class="message"><a href="#">I have Account</a></p>
-      </form>
-      <form class="login-form acrylic" action="../../index.html">
-        <span>Login to your account</span>
-        <input id="email" type="email" placeholder="Email" required/>
-        <input id="pw" type="password" placeholder="Password" required minlength="4" maxlength="20"/>
-        <input type="submit" value="Submit" id="SignIn" />
-        <p class="message"><a href="#">Create Account</a></p>
-      </form>
-    </div>
-    <!-- partial:index.partial.html -->
-    <div class="tattoine">
-      <div class="bb-8">
-        <div class="head">
-            <div class="eye"></div>
-          </div>
-        <div class="ball">
-          <div class="connect one"></div>
-          <div class="connect two"></div>
-          <div class="connect three"></div>
-          <div class="ball__inner one">
-            <div class="inside"></div>
-          </div>
-          <div class="ball__inner two">
-            <div class="inside"></div>
-          </div>
-          <div class="ball__inner three">
-            <div class="inside"></div>
-          </div>
-        </div>
-      </div>
-      <div class="bb-8--shadow">
-      </div>
-      <div class="bb-8--shadow--2">
-      </div>
-    <div class="land"></div>
-    </div>
-  </div>
-  </div>
-</template>
-
-<style>
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page {
@@ -170,14 +118,6 @@
   color: #EF3B3A;
 }
 body, .acrylic::before {
-  /*background: url("https://wallup.net/wp-content/uploads/2017/11/23/502910-Firewatch-night-forest.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;*/
   background-color: #ffdc8e;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -365,4 +305,3 @@ body, .acrylic::before {
   margin-left: -35px;
   margin-top: -10px;
 }
-</style>

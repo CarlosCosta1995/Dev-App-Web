@@ -2,6 +2,10 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'jquery/src/jquery.js'
+import 'bootstrap/dist/js/bootstrap.min.js'
+
 
 createApp(App).use(router).mount('#app')
 
@@ -25,3 +29,28 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+app;
+
+
+// //BoostrapVue
+// import Vue from 'vue'
+// import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
+// // Import Bootstrap an BootstrapVue CSS files (order is important)
+// import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// // Make BootstrapVue available throughout your project
+// Vue.use(BootstrapVue)
+// // Optionally install the BootstrapVue icon components plugin
+// Vue.use(IconsPlugin)
+
+// import Vue from 'vue'
+// import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
+
+// import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// Vue.use(BootstrapVue)
+// Vue.use(BootstrapVueIcons)
