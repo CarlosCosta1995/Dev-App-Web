@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newah - Admin Page</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet">
+
+    <!-- Link CSS File-->
+    <link rel="stylesheet" href="../../assets/css/admin.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- Link JS File-->
+    <script>
+        $('.menu-toggle').on('click', function() {
+            $('body').toggleClass('menu-open');
+        });
+    </script>
+
+</head>
+
+<body class="menu menu-open">
+
+    <!-- Admin Side-Menu-->
+    <header>
+        <!--<a href="#" class="menu-toggle"><i class="material-icons">menu</i></a>-->
+        <nav class="menu-side">
+            <br>
+            <img src="http://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png" alt="Girl in a jacket" width="50" height="50" style="margin: 5%;"> 
+            <hr>
+        <ul>
+            <a href="../../index.html#home" style="text-decoration: none;"><li>HomePage</li></a>
+            <a href="#" style="text-decoration: none;"><li>LogIn & Sign Up</li></a>
+            <a href="#newShip" style="text-decoration: none;"><li>SpaceShip</li></a>
+            <a href="#newPlanet" style="text-decoration: none;"><li>Planet</li></a>
+            <a href="#newRace" style="text-decoration: none;"><li>Race</li></a>
+            <a href="#contactUs" style="text-decoration: none;"><li>Contact Us</li></a>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section-->
+    <main id="content">
+        
+        <!--Form Register a new Spaceship-->
+        <div id="newShip">
+            <h1>Register a new Spaceship</h1>
+        </div>
+
+        <!--Form Register a new Planet-->
+        <div id="newPlanet">
+            <h1>Register a new Planet</h1>
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Planet Name</label>
+                  <input type="text" class="form-control" id="inputEmail4" placeholder="Ni'Var [Vulcan(alternate reality)]">
+                </div>
+                <div class="col-12">
+                  <label for="inputPassword4" class="form-label">Planet Description</label>
+                  <textarea class="form-control" name="comment" form="inputPassword4">Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of the Alpha Quadrant. It had no moons, but appeared to have close planetary companions. </textarea>
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Quadrant Location</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Orbiting 40 Eridani A.,Vulcan system, Alpha Quadrant">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Satellite(s)</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="None, one Satellite, ...">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Political affiliation</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="United Federation of Planets, The Jedi Order, Vulcan High Command,...">
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City Name</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="Vulcan ">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Planetary classification </label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>class D worlds</option>
+                      <option>class H worlds</option>
+                      <option>class J worlds</option>
+                      <option>class K worlds</option>
+                      <option>class L worlds</option>
+                      <option>class M worlds</option>
+                      <option>class N worlds</option>
+                      <option>class R worlds</option>
+                      <option>class T worlds</option>
+                      <option>class Y worlds</option>
+                      <option>Unnamed or Asteroid</option>
+                    </select>
+                  </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Type of Planet</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Binary Planet</option>
+                    <option>Capital planet</option>
+                    <option>Gas giant</option>
+                    <option>Homeworld</option>
+                    <option>Rogue planet</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Status of Planet</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>Inhabited planet</option>
+                      <option>Uninhabited planet</option>
+                      <option>Delphic Expanse planet</option>
+                      <option>Unnamed planet</option>
+                    </select>
+                  </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+        </div>
+
+        <!--Form Register a new Race-->
+        <div id="newRace">
+            <h1>Register a new Race</h1>
+        </div>
+        
+        <!--Form Email us-->
+        <div id="contactUs">
+            <h1>Contact Us</h1>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -118,14 +118,6 @@
   color: #EF3B3A;
 }
 body, .acrylic::before {
-  /*background: url("https://wallup.net/wp-content/uploads/2017/11/23/502910-Firewatch-night-forest.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;*/
   background-color: #ffdc8e;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
