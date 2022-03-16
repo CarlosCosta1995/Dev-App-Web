@@ -1,6 +1,6 @@
 <template>
  <section-home>
-<!-- ======= Welcome Section ======= -->
+  <!-- ======= Welcome Section ======= -->
   <section id="home" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Welcome abroad Shapceship NEWAH, Commander!</h1>

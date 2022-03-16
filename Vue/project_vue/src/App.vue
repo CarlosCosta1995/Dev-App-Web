@@ -1,14 +1,12 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">LoginRegister</router-link> |
     <router-link to="/admin">Admin</router-link>
-  </nav>
+  </nav> -->
   <header-all></header-all>
   <router-view/>
 </template>
-
-
 
 <style>
 #app {
