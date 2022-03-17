@@ -29,7 +29,7 @@
       </div>
     </section>
 
-    <section id="ship" class="myship">
+    <section id="ship" class="myship" style="background: url(assets/img/galaxy.gif) no-repeat; background-size: cover; position: relative;">
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-lg-4">
@@ -224,11 +224,11 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="https://miro.medium.com/max/1024/1*YxvChHHVQZq2AFvUltgijw@2x.jpeg" class="img-fluid" alt="">
+              <img src="https://static.wikia.nocookie.net/jedipedia/images/6/69/Jar_Jar_Binks.png/revision/latest?cb=20140803191321&path-prefix=de" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Gungan</h4>
                 <div class="portfolio-links">
-                  <a href="https://miro.medium.com/max/1024/1*YxvChHHVQZq2AFvUltgijw@2x.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gungan"><i class="bx bx-plus"></i></a>
+                  <a href="https://static.wikia.nocookie.net/jedipedia/images/6/69/Jar_Jar_Binks.png/revision/latest?cb=20140803191321&path-prefix=de" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gungan"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -264,43 +264,23 @@
       </div>
     </section><!-- Races Section -->
   </main><!-- End #main -->
-    <div id="preloader"></div>
-    <a href="#home" class="back-to-top d-flex align-items-center justify-content-center">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-    </svg></a>
  </section-home>
 </template>
 
 <style>
 
-#ship {
-  background: url(~@/assets/img/galaxy.gif);
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  position: relative;
-}
 </style>
 
 <script>
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'jquery/src/jquery.js';
-// import 'bootstrap/dist/js/bootstrap.min.js';
-// import 'bootstrap-icons/font/bootstrap-icons';
-
 export default {
   data() {
     return {
       eve: 'https://images.squarespace-cdn.com/content/v1/5bfc8dbab40b9d7dd9054f41/1574786546263-Z441DKZBZDHV9Q7ABEFY/A-Timeline-Through-the-Star-Trek-Universe-Part-I.jpg?format=1000w',
-      image_: 'https://i0.wp.com/ropedrop.net/wp-content/uploads/2020/02/Star-Wars-Narrative-Timeline.jpeg?fit=3240%2C1080&ssl=1',
-      //gungan: 'https://static.wikia.nocookie.net/jedipedia/images/6/69/Jar_Jar_Binks.png/revision/latest?cb=20140803191321&path-prefix=de',
+      image_: 'https://static.wikia.nocookie.net/jedipedia/images/6/69/Jar_Jar_Binks.png/revision/latest?cb=20140803191321&path-prefix=de'
 
     }
       
   },
 };
-
-//rundll32 sysdm.cpl,EditEnvironmentVariables
-
 </script>
 
