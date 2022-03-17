@@ -134,9 +134,11 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 .nav-menu * {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
+  z-index: 999; 
 }
 .nav-menu > ul > li {
   position: relative;

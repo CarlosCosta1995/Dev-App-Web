@@ -6,9 +6,11 @@
   </nav> -->
   <header-all></header-all>
   <router-view/>
+  <footer-all></footer-all>
 </template>
 
-<style>
+<style scoped>
+@import "@/assets/css/style.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -37,11 +39,13 @@ import HeaderAll from "@/components/HeaderAll.vue";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'jquery/src/jquery.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
+import FooterAll from './components/FooterAll.vue';
 
 export default {
   name: "App",
   components: {
     HeaderAll,
+    FooterAll
   },
 };
 </script>

@@ -1,7 +1,6 @@
 <template>
     <!-- Main Section-->
     <div id="content">
-        
         <!--Form Register a new Spaceship-->
         <div id="newShip">
             <h1>Register a new Spaceship</h1>
@@ -92,6 +91,6 @@
     </div>
 </template>
 
-<style scoped>
+<style lang="css" scoped>
 @import "@/assets/css/admin.css";
 </style>

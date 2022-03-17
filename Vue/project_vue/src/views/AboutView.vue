@@ -101,7 +101,8 @@ export default {
 
 
 
-<style>
+<style scoped>
+@import "@/assets/css/logIn.css";
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page {
