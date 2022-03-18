@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <nav-bar>
+    <nav-bar  v-if="$route.meta.navBar == true">
 
     </nav-bar>
 
     <router-view/>
     
-    <footer-bar>
+    <footer-bar  v-if="$route.meta.footerBar == true">
 
     </footer-bar>
   </div>

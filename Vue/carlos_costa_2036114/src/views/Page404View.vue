@@ -1,39 +1,42 @@
-<template>
-  <div class="error__wrapper">
-    <div class="orbits orbit_1">
-      <div class="planets planet_1"></div>
-      <div class="planets planet_2"></div>
-      <div class="planets planet_3"></div>
-    </div>
-    <div class="orbits orbit_2">
-      <div class="planets planet_1"></div>
-      <div class="planets planet_2"></div>
-      <div class="planets planet_3"></div>
-    </div>
-    <div class="orbits orbit_3">
-      <div class="planets planet_1"></div>
-      <div class="planets planet_2"></div>
-      <div class="planets planet_3"></div>
-    </div>
-    <div class="orbits orbit_4">
-      <div class="planets planet_1"></div>
-      <div class="planets planet_2"></div>
-    </div>
-    <div class="error__contant">
-      <h3 class="error__title">404</h3>
-      <h4 class="error__subtitle">Sorry, the page you were looking for doesn't exist.</h4>
-      <a href="#" class="error__link-back"> Go back
-      </a>
-    </div>
-  </div>
+<template >
+	<div>
+		<div class="error__wrapper">
+			<div class="orbits orbit_1">
+			<div class="planets planet_1"></div>
+			<div class="planets planet_2"></div>
+			<div class="planets planet_3"></div>
+			</div>
+			<div class="orbits orbit_2">
+			<div class="planets planet_1"></div>
+			<div class="planets planet_2"></div>
+			<div class="planets planet_3"></div>
+			</div>
+			<div class="orbits orbit_3">
+			<div class="planets planet_1"></div>
+			<div class="planets planet_2"></div>
+			<div class="planets planet_3"></div>
+			</div>
+			<div class="orbits orbit_4">
+			<div class="planets planet_1"></div>
+			<div class="planets planet_2"></div>
+			</div>
+			<div class="error__contant">
+			<h3 class="error__title">404</h3>
+			<h4 class="error__subtitle">Sorry, the page you were looking for doesn't exist.</h4>
+			<router-link to="home" class="error__link-back"> Go back
+			</router-link>
+			</div>
+		</div>
+	</div>
 </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-body {
+div {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  background-color: rgba(133, 215, 242, 0.878);
 }
 .error__wrapper {
 	--orbit1-size: 105vw;

@@ -8,7 +8,11 @@ const routes = [
   {
     path: '/home',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    meta: {
+      navBar: true,
+      footerBar: true,
+    }
   },
   {
     path: '/about',
@@ -16,7 +20,11 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+    meta: {
+      navBar: true,
+      footerBar: true,
+    }
   },
   {
     path: '/solarSystem',
@@ -24,7 +32,11 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/SolarSystemView.vue')
+    component: () => import(/* webpackChunkName: "solarSystem" */ '../views/SolarSystemView.vue'),
+    meta: {
+      navBar: true,
+      footerBar: false,
+    }
   },
   {
     path: '/page404',
@@ -32,10 +44,11 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Page404View.vue'),
+    // https://stackoverflow.com/questions/58615754/how-to-hide-global-component-e-g-navbar-on-some-routes
+    component: () => import(/* webpackChunkName: "page404" */ '../views/Page404View.vue'),
     meta: {
       navBar: false,
-      
+      footerBar: false,
     }
   }
 ]
