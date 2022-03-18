@@ -1,11 +1,9 @@
--
-    v.valHooks[this] = v.extend(v.valHooks[this], {
+  v.valHooks[this] = v.extend(v.valHooks[this], {
       set: function(e, t) {
         if (v.isArray(t))
           return e.checked = v.inArray(v(e).val(), t) >= 0
       }
-    })
-  });
+    });
   var $ = /^(?:textarea|input|select)$/i,
     J = /^([^\.]*|)(?:\.(.+)|)$/,
     K = /(?:^|\s)hover(\.\S+|)\b/,
@@ -2415,8 +2413,7 @@
     })
   }), e.jQuery = e.$ = v, typeof define == "function" && define.amd && define.amd.jQuery && define("jquery", [], function() {
     return v
-  })
-})(window);
+  })(window);
 
 (function(e) {
   function l() {
