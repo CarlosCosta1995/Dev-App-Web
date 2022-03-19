@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'home',
     component: HomeView,
     meta: {
@@ -15,15 +15,15 @@ const routes = [
     }
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/admin',
+    name: 'admin',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+    component: () => import(/* webpackChunkName: "about" */ '../views/AdminView.vue'),
     meta: {
-      navBar: true,
-      footerBar: true,
+      navBar: false,
+      footerBar: false,
     }
   },
   {
@@ -50,10 +50,50 @@ const routes = [
       navBar: false,
       footerBar: false,
     }
+  },
+  {
+    path: '/logIn',
+    name: 'logIn',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    // https://stackoverflow.com/questions/58615754/how-to-hide-global-component-e-g-navbar-on-some-routes
+    component: () => import(/* webpackChunkName: "page404" */ '../views/LogInView.vue'),
+    meta: {
+      navBar: false,
+      footerBar: false,
+    }
+  },
+  {
+    path: '/signUp',
+    name: 'signUp',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    // https://stackoverflow.com/questions/58615754/how-to-hide-global-component-e-g-navbar-on-some-routes
+    component: () => import(/* webpackChunkName: "page404" */ '../views/SignUpView.vue'),
+    meta: {
+      navBar: false,
+      footerBar: false,
+    }
+  },
+  {
+    path: '/timeLine',
+    name: 'timeLine',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    // https://stackoverflow.com/questions/58615754/how-to-hide-global-component-e-g-navbar-on-some-routes
+    component: () => import(/* webpackChunkName: "page404" */ '../views/TimeLineView.vue'),
+    meta: {
+      navBar: true,
+      footerBar: true,
+    }
   }
 ]
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 })
 

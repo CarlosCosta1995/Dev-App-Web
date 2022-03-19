@@ -23,7 +23,7 @@
 			<div class="error__contant">
 			<h3 class="error__title">404</h3>
 			<h4 class="error__subtitle">Sorry, the page you were looking for doesn't exist.</h4>
-			<router-link to="home" class="error__link-back"> Go back
+			<router-link to="/" class="error__link-back"> Go back
 			</router-link>
 			</div>
 		</div>
