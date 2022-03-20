@@ -11,9 +11,10 @@
         </form> -->
       <form class="login-form acrylic" action="../../index.html">
         <span>Login to your account</span>
-        <input id="email" type="email" placeholder="Email" required/>
-        <input id="pw" type="password" placeholder="Password" required minlength="4" maxlength="20"/>
-        <input type="submit" value="Submit" id="SignIn"/>
+        <input id="email" type="email" placeholder="Email" v-model="Email" required/>
+        <input id="pw" type="password" placeholder="Password" v-model="Password" required minlength="6" maxlength="20"/>
+        <span v-if="v$.Password.$error">{{ v$.Password.$errors[0].$message }}</span>
+        <button id="SignIn" @click="signInRequest()">Go</button>
         <p class="message">
           <router-link to="/signUp">
             <a>Create Account</a>
@@ -54,7 +55,56 @@
 </template>
 
 <script>
+import useValidate from "@vuelidate/core";
+import { required } from "@vuelidate/validators";
+import firebase from "firebase";
 
+export default {
+  name: "SignUp",
+  data() {
+    return {
+      v$: useValidate(),
+      Email: "",
+      Password: "",
+      PasswordConfirm: "",
+    };
+  },
+  validations() {
+    return {
+      Email: {required},
+      Password: {required},
+      PasswordConfirm: {required},
+    }
+  },
+  methods: {
+    submitForm() {
+      this.v$.$validate() // checks all inputs
+      if (!this.v$.$error) { // if ANY fail validation
+        alert('Form successfully submitted.');
+        this.signupRequest();
+        this.$router.push('/admin');
+      } else {
+        alert('Form failed validation');
+        this.$router.push('/logIn');
+      }
+    },
+    signInRequest() {
+      firebase
+      .auth()
+      .signInWithEmailAndPassword(this.Email, this.Password)
+      .then ( 
+        () => {
+          this.sucessMessage = "Register Successfully.";
+        },
+        error => {
+          let errorResponse = JSON.parse(error.message);
+          this.errorMessage = errorResponse.error.message;
+          console.log(this.errorResponse);
+        }
+      );
+    }
+  }
+}
 </script>
 
 <style scoped>
