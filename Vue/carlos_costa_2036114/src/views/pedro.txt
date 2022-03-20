@@ -1,0 +1,134 @@
+<template>
+  <body>
+    <div class="container" id="container" ref="container">
+      <div class="form-container sign-up-container">
+        <div class="form-subcontainer">
+          <img class="logo" src="@/assets/img/nismo-logo.png" />
+          <input
+            type="email"
+            id="reg-email"
+            placeholder="Email"
+            v-model="email"
+          />
+          <input
+            type="password"
+            id="reg-password"
+            placeholder="Password"
+            v-model="password"
+          />
+          <input
+            type="password"
+            id="reg-password-confirm"
+            placeholder="Confirm Password"
+            v-model="password_confirm"
+          />
+          <button @click="validateRegisterInputs">Register</button>
+          <br />
+          <span v-if="error_message.length > 0">{{ error_message }}</span>
+        </div>
+      </div>
+
+      <div class="form-container sign-in-container">
+        <div class="form-subcontainer">
+          <img class="logo" src="@/assets/img/nismo-logo.png" />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            v-model="email_login"
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            v-model="password_login"
+          />
+          <button @click="validateLoginInputs">Login</button>
+          <br />
+          <span v-if="error_message.length > 0">{{ error_message }}</span>
+        </div>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Already have an account?</h1>
+            <p></p>
+            <button class="ghost" id="signIn" @click="switchPanel">
+              Login
+            </button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Don't have an account?</h1>
+            <p></p>
+            <button class="ghost" id="signUp" @click="switchPanel">
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</template>
+
+<script setup>
+import { ref } from "vue";
+import firebase from "firebase";
+import { useRouter } from "vue-router"; // import router
+const email = ref("");
+const password = ref("");
+const password_confirm = ref("");
+const email_login = ref("");
+const password_login = ref("");
+const error_message = ref("");
+const router = useRouter(); // get a reference to our vue router
+function validateRegisterInputs() {
+  if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+    error_message.value = "Invalid email address.";
+  } else if (password.value.length < 6) {
+    error_message.value = "Password must contain at least 6 characters.";
+  } else if (password.value != password_confirm.value) {
+    error_message.value = "Passwords do not match.";
+  } else {
+    register();
+  }
+}
+function validateLoginInputs() {
+  if (
+    !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email_login.value)
+  ) {
+    error_message.value = "Invalid email address.";
+  } else if (password_login.value.length < 6) {
+    error_message.value = "Password must contain at least 6 characters.";
+  } else {
+    login();
+  }
+}
+const register = () => {
+  firebase
+    .auth() // get the auth api
+    .createUserWithEmailAndPassword(email.value, password.value) // need .value because ref()
+    .then((data) => {
+      router.push("/");
+    })
+    .catch((error) => {
+      console.log(error);
+      error_message.value = error.message;
+    });
+};
+const login = () => {
+  firebase
+    .auth() // get the auth api
+    .signInWithEmailAndPassword(email_login.value, password_login.value) // need .value because ref()
+    .then((data) => {
+      router.push("/"); // redirect to the feed
+    })
+    .catch((error) => {
+      console.log(error);
+      error_message.value = error.message;
+    });
+};
+function switchPanel() {
+  error_message.value = "";
+  container.classList.toggle("right-panel-active");
+}
+</script>
