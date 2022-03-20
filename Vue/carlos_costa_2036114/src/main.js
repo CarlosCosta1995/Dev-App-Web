@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
+
 Vue.config.productionTip = false
 
 new Vue({
@@ -16,6 +17,7 @@ new Vue({
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Import the functions you need from the SDKs you need
+// import * as firebase from "firebase";
 import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
@@ -29,6 +31,8 @@ const firebaseConfig = {
   appId: "1:249136196491:web:5edb383d5e84fa03351d8e",
   measurementId: "G-0CMQ1F3ZJC"
 };
+
+// firebase.initializeApp(firebaseConfig);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
