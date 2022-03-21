@@ -18,8 +18,7 @@ new Vue({
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Import the functions you need from the SDKs you need
 // import * as firebase from "firebase";
-import { initializeApp } from "firebase/app";
-
+import firebase from 'firebase'
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -32,8 +31,5 @@ const firebaseConfig = {
   measurementId: "G-0CMQ1F3ZJC"
 };
 
-// firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-app;

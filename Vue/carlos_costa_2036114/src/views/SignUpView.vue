@@ -322,7 +322,8 @@
              .auth()
              .signOut()
              .then(user => {
-               this.$router.push({ path: 'admin' });
+               console.log("user " + user);
+               this.$router.push({ path: 'logIn' });
              });
          } catch (error) {
            console.log(error.message);

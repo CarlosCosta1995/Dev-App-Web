@@ -78,7 +78,7 @@ time {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul li::after {
-  transition: background 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .timeline ul li.in-view::after {

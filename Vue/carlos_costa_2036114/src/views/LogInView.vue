@@ -9,7 +9,7 @@
           <button id="SignUp">Go</button>
           <p class="message"><a href="#">I have Account</a></p>
         </form> -->
-      <form class="login-form acrylic">
+      <form class="login-form acrylic"  @submit.prevent="signInRequest">
         <span>Login to your account</span>
         <input
           id="email"
