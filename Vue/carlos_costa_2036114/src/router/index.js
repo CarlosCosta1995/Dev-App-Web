@@ -38,19 +38,7 @@ const routes = [
       footerBar: false,
     }
   },
-  {
-    path: '/page404',
-    name: 'page404',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    // https://stackoverflow.com/questions/58615754/how-to-hide-global-component-e-g-navbar-on-some-routes
-    component: () => import(/* webpackChunkName: "page404" */ '../views/Page404View.vue'),
-    meta: {
-      navBar: false,
-      footerBar: false,
-    }
-  },
+
   {
     path: '/logIn',
     name: 'logIn',
@@ -89,7 +77,20 @@ const routes = [
       navBar: true,
       footerBar: true,
     }
-  }
+  },
+  {
+    path: '/*',
+    name: 'page404',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    // https://stackoverflow.com/questions/58615754/how-to-hide-global-component-e-g-navbar-on-some-routes
+    component: () => import(/* webpackChunkName: "page404" */ '../views/Page404View.vue'),
+    meta: {
+      navBar: false,
+      footerBar: false,
+    }
+  },
 ]
 
 const router = new VueRouter({

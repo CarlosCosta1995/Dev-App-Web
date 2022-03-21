@@ -79,10 +79,12 @@ export default {
       .then(
         () => {
           this.successMessage= "Register Successfully.";
+          console.log(this.successMessage)
           },
         error => {
           let errorResponse= JSON.parse(error.message);
           this.errorMessage= errorResponse.error.message;
+          console.log(this.errorMessage)
       });
     }
   }

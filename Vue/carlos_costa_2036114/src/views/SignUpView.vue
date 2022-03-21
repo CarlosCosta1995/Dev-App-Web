@@ -2,11 +2,11 @@
 <!-- partial:index.partial.html -->
   <div class="login-page">
     <div class="form">
-        <form class="register-form acrylic">
+        <div class="register-form acrylic">
           <span>Create a new account</span>
           <input type="Email" placeholder="Email" name="Email" v-model="Email"/>
           <input type="Password" placeholder="Password" name="Password" v-model="Password" required minlength="6" maxlength="20"/>
-          <input type="Password" placeholder="Password Confirm" v-model="PasswordConfirm" required minlength="6" maxlength="20"/>
+          <!-- <input type="Password" placeholder="Password Confirm" v-model="PasswordConfirm" required minlength="6" maxlength="20"/> -->
           <!-- <span v-if="v$.PasswordConfirm.$error">{{ v$.PasswordConfirm.$errors[0].$message }}</span> -->
           <button id="SignUp" v-on:click="registerButtonPressed">Go</button>
           <p class="message">
@@ -19,7 +19,7 @@
               <a>Back</a>
             </router-link>
           </p>
-        </form>
+        </div>
       <!-- <form class="login-form acrylic" action="../../index.html">
         <span>Login to your account</span>
         <input id="Email" type="Email" placeholder="Email" required/>
@@ -322,7 +322,7 @@
              .auth()
              .signOut()
              .then(user => {
-               this.$router.push("/logIn");
+               this.$router.push({ path: 'admin' });
              });
          } catch (error) {
            console.log(error.message);

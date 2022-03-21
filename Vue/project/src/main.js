@@ -1,6 +1,9 @@
+/* eslint-disable */
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import firebase from 'firebase/app';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -18,7 +21,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-app;
+firebase.initializeApp(firebaseConfig);
+
 
 createApp(App).use(router).mount('#app')

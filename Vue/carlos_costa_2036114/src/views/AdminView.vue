@@ -4,7 +4,7 @@
     <!-- Admin Side-Menu-->
     <header>
         <!--<a href="#" class="menu-toggle"><i class="material-icons">menu</i></a>-->
-        <nav class="menu-side" style="background-color: #00002;">
+        <nav class="menu-side" >
             <br/>
             <img src="https://www.freeiconspng.com/uploads/go-back--gallery-for--contact-person-icon-png-21.png" width="50" alt="user_Icon" style="margin: 5%;"/>
             <br/>
