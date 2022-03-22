@@ -13,7 +13,7 @@
               </b-nav-item>
 
               <b-nav-item >
-                <router-link to="/page404">Page404</router-link>
+                <router-link to="/admin">AdminPage</router-link>
               </b-nav-item> 
 
               <!-- Navbar dropdowns -->
@@ -100,6 +100,7 @@ https://bootstrap-vue.org/docs
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  z-index: 999;
 }
 
 nav {

@@ -59,7 +59,7 @@
             />
           </div>
           <div class="col-md-6">
-            <label for="shipType" class="form-label">Type of shipe</label>
+            <label for="shipType" class="form-label">Type of ship</label>
             <input
               type="text"
               v-model="shipType"
@@ -98,18 +98,32 @@
               placeholder="Captain Saru"
             />
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <label for="shipAssets" class="form-label">Assets </label>
-            <select id="shipAssets" v-model="shipAssets" class="form-select">
+            <input
+              type="text"
+              v-model="shipAssets"
+              class="form-control"
+              id="shipAssets"
+              placeholder="Artificial Inteligent, Spore Drive, Time-travel machine, ..."
+            />
+            <!-- <select id="shipAssets" v-model="shipAssets" class="form-select">
               <option selected>Choose...</option>
               <option>Artificial Inteligent</option>
               <option>Spore Drive</option>
               <option>Time-travel machine</option>
-            </select>
+            </select> -->
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <label for="shipSiblings" class="form-label">Siblings</label>
-            <select
+            <input
+              type="text"
+              v-model="shipSiblings"
+              class="form-control"
+              id="shipSiblings"
+              placeholder="USS Discovery, USS Shenzhou, USS Glenn, ..."
+            />
+            <!-- <select
               id="shipSiblings"
               v-model="shipSiblings"
               class="form-select"
@@ -118,7 +132,7 @@
               <option>USS Discovery</option>
               <option>USS Shenzhou</option>
               <option>USS Glenn</option>
-            </select>
+            </select> -->
           </div>
           <div class="col-12">
             <button type="submit" class="btn btn-primary" @click="guardar()">
@@ -138,21 +152,23 @@
               type="text"
               class="form-control"
               id="planetName"
+              v-model="planetName"
               placeholder="Ni'Var [Vulcan(alternate reality)]"
             />
           </div>
-          <div class="col-12">
+          <!-- <div class="col-12">
             <label for="planetDescription" class="form-label"
               >Planet Description</label
             >
             <textarea
               class="form-control"
               name="comment"
+              v-model="planetDescription"
               form="planetDescription"
             >
-Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of the Alpha Quadrant. It had no moons, but appeared to have close planetary companions. </textarea
+            Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of the Alpha Quadrant. It had no moons, but appeared to have close planetary companions. </textarea
             >
-          </div>
+          </div> -->
           <div class="col-12">
             <label for="planetLocation" class="form-label"
               >Quadrant Location</label
@@ -161,6 +177,7 @@ Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of
               type="text"
               class="form-control"
               id="planetLocation"
+              v-model="planetLocation"
               placeholder="Orbiting 40 Eridani A.,Vulcan system, Alpha Quadrant"
             />
           </div>
@@ -170,6 +187,7 @@ Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of
               type="text"
               class="form-control"
               id="Satellite"
+              v-model="Satellite"
               placeholder="None, one Satellite, ..."
             />
           </div>
@@ -181,6 +199,7 @@ Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of
               type="text"
               class="form-control"
               id="planetAffiliation"
+              v-model="planetAffiliation"
               placeholder="United Federation of Planets, The Jedi Order, Vulcan High Command,..."
             />
           </div>
@@ -190,6 +209,7 @@ Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of
               type="text"
               class="form-control"
               id="cityName"
+              v-model="cityName"
               placeholder="Vulcan "
             />
           </div>
@@ -197,7 +217,14 @@ Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of
             <label for="planetClassification" class="form-label"
               >Planetary classification
             </label>
-            <select id="planetClassification" class="form-select">
+            <input
+              type="text"
+              class="form-control"
+              id="planetClassification"
+              v-model="planetClassification"
+              placeholder="Class D, class H, Unnamed or Asteroid, ... "
+            />
+            <!-- <select id="planetClassification" class="form-select">
               <option selected>Choose...</option>
               <option>class D worlds</option>
               <option>class H worlds</option>
@@ -210,33 +237,47 @@ Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of
               <option>class T worlds</option>
               <option>class Y worlds</option>
               <option>Unnamed or Asteroid</option>
-            </select>
+            </select> -->
           </div>
           <div class="col-md-4">
             <label for="planetType" class="form-label">Type of Planet</label>
-            <select id="planetType" class="form-select">
+            <input
+              type="text"
+              class="form-control"
+              id="planetType"
+              v-model="planetType"
+              placeholder="Binary Planet, Capital planet, Gas giant, Homeworld or Rogue planet"
+            />
+            <!-- <select id="planetType" class="form-select">
               <option selected>Choose...</option>
               <option>Binary Planet</option>
               <option>Capital planet</option>
               <option>Gas giant</option>
               <option>Homeworld</option>
               <option>Rogue planet</option>
-            </select>
+            </select> -->
           </div>
           <div class="col-md-4">
             <label for="planetStatus" class="form-label"
               >Status of Planet</label
             >
-            <select id="planetStatus" class="form-select">
+            <input
+              type="text"
+              class="form-control"
+              id="planetStatus"
+              v-model="planetStatus"
+              placeholder="Inhabited plane, Uninhabited planet, Delphic Expanse planet or Unnamed planet"
+            />
+            <!-- <select id="planetStatus" class="form-select">
               <option selected>Choose...</option>
               <option>Inhabited planet</option>
               <option>Uninhabited planet</option>
               <option>Delphic Expanse planet</option>
               <option>Unnamed planet</option>
-            </select>
+            </select> -->
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary" @click="guardar()">
               Submit New Planet
             </button>
           </div>
@@ -411,33 +452,87 @@ import axios from "axios";
 export default {
   data() {
     return {
+      /*=== For SpaceShips ====*/
       shipName: "",
       registerNumber: "",
       shipType: "",
       buildDate: "",
       origin: "",
       shipCaptain: "",
-      shipAssets: [],
-      shipSiblings: '',
+      shipAssets: "",
+      shipSiblings: "",
+
+      /*=== For Planets ====*/
+      planetName: "",
+      planetLocation: "",
+      Satellite: "",
+      planetAffiliation: "",
+      cityName: "",
+      planetClassification: "",
+      planetType: "",
+      planetStatus: "",
     };
   },
   methods: {
     guardar() {
       axios
         .post("https://project-vue-cc-default-rtdb.firebaseio.com/.json", {
+          /*=== For SpaceShips ====*/
           shipName: this.shipName,
-        //   registerNumber: this.registerNumber,
-        //   shipType: this.shipType,
-        //   buildDate: this.buildDate,
-        //   origin: this.origin,
-        //   shipCaptain: this.shipCaptain,
-          shipAssets: this.shipAssets,})
-        //   shipSiblings: this.shipSiblings,
-        // })
+          registerNumber: this.registerNumber,
+          shipType: this.shipType,
+          buildDate: this.buildDate,
+          origin: this.origin,
+          shipCaptain: this.shipCaptain,
+          shipAssets: this.shipAssets,
+          shipSiblings: this.shipSiblings,
 
-        // .then(() => console.log("wtv"));
-        .then((response) => this.shipId = response.data.id, console.log("wtv"));
+          /*=== For Planets ====*/
+          planetName: this.planetName,
+          planetLocation: this.planetLocation,
+          Satellite: this.Satellite,
+          planetAffiliation: this.planetAffiliation,
+          cityName: this.cityName,
+          planetClassification: this.planetClassification,
+          planetType: this.planetType,
+          planetStatus: this.planetStatus,
+        })
+
+        .then(() => console.log("Request Sent"));
+      // .then(
+      //   (response) => { this.shipId = response.data.id, console.log("Request Sent") }
+      //   // (error) => { this.shipId = error.data.id, console.log("Request Error")}
+      // )
+      // .catch(
+      //   (error) => { this.shipId = error.data.id, console.log("Request Error") }
+      // )
+      // console.log("obj sent");
     },
+    // planet() {
+    //   axios
+    //     .post("https://project-vue-cc-default-rtdb.firebaseio.com/.json", {
+
+    //       /*=== For Planets ====*/
+    //       planetName: this.planetName,
+    //       planetLocation: this.planetLocation,
+    //       Satellite: this.Satellite,
+    //       planetAffiliation: this.planetAffiliation,
+    //       cityName: this.cityName,
+    //       planetClassification: this.planetClassification,
+    //       planetType: this.planetType,
+    //       planetStatus: this.planetStatus,
+    //     })
+
+    //     .then(() => console.log("Request Sent"));
+    //     // .then(
+    //     //   (response) => { this.shipId = response.data.id, console.log("Request Sent") }
+    //     //   // (error) => { this.shipId = error.data.id, console.log("Request Error")}
+    //     // )
+    //     // .catch(
+    //     //   (error) => { this.shipId = error.data.id, console.log("Request Error") }
+    //     // )
+    //   // console.log("obj sent");
+    // },
   },
 };
 </script>
