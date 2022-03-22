@@ -71,7 +71,8 @@
 </template>
 
 <script>
-
+//fazer get
+// igual mas em vez de post faz get
 </script>
 
 <style scoped>

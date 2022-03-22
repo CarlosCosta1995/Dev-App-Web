@@ -251,6 +251,10 @@
 //  document.getElementByClassName('menu-toggle').on('click', function() {
 //            document.getElementsByClassName('admin').toggleClass('menu-open');
 //          });
+
+// Faze post de um dos forms
+// fazer v-models nos campos do form
+// button submit ( função guardar e fazer o post)
 </script>
 
 <style scoped>
