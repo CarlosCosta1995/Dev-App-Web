@@ -37,10 +37,10 @@
     <!-- ======= Main Content Section ======= -->
     <main id="main">
       <!-- ======= Presenting Newah A.I and SpaceShipe Properties ======= -->
-      <section class="ship">
+      <section class="ship" style="background-color: #34496a;">
         <div class="container" data-aos="fade-up">
           <div class="row">
-            <div class="section-title col-lg-6 align-self-start">
+            <div class="section-title col-lg-6 align-self-start" style="color: white;">
               <p><b>Welcome aboard, Commander! I'm Eve, the artificial Inteligent system from NEWAH Shapceship.</b> 
                 I will be your assistent on your new journey through the Universe.
                 This is your SpaceShip to command! Captain Saru will assist you in controlling passengers and crew.
@@ -48,13 +48,103 @@
             </div>
 
             <div class="col-lg-6 align-self-end">
-              <img src="@/assets/img/Eve.png" class="img-fluid" alt="Newah A.I">
+              <img src="@/assets/img/Eve.png" class="img-fluid" alt="Newah A.I" width="350px" height="350px">
             </div>
           </div>
         </div>
       </section>
 
-      <!-- <div class="Evee" data-aos="fade-up">
+      <section id="ship" class="myship">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="@/assets/img/Discovery.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+              <h3>ShapeShip <b>NEWAH : NCC-3569-A</b></h3>
+              <p class="fst-italic">
+                <em
+                  >"All things can be understood once they are discovered; the
+                  point is to discover them."</em
+                >
+                - <i>Galileo Galilei</i>
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Register Number:</strong> <span>NCC-3569-A</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Contructed:</strong> <span>November 2256</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Origin:</strong>
+                      <span> San Francisco Fleet Yards, Earth</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Siblings:</strong>
+                      <span>USS Discovery, USS Shenzhou and USS Glenn</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Class:</strong>
+                      <span>Crossfield-class starship</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Federation:</strong>
+                      <span>Federation Starfleet</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Captain:</strong> <span>Saru</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Assets:</strong>
+                      <span
+                        >Artificial Inteligent, Spore Drive and Time-travel
+                        machine.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p style="color: black">
+                <em
+                  >"This ship bears the name Discovery. Never has that been more
+                  fitting, or more prescient. She has carried us into the
+                  future, and it will be our privilege to make that future
+                  bright. Let us begin. Together."</em
+                >
+                - <i>Captain Saru, 3189 ("People of Earth")</i>
+              </p>
+              <br />
+              <button
+                class="btn btn-warnning"
+                style="color: black; background-color: #0563bb"
+              >
+                <a href="./Pages/MoreInfo/SpaceShip.html" style="color: black"
+                  >See More!</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- Eeve Working div -->
+      <div class="Evee" data-aos="fade-up">
         <div id="webgl"></div>
         <div class="svg-box">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
@@ -734,96 +824,8 @@
           </svg>
         </div>
         <canvas class="webgl2"></canvas>
-      </div> -->
-
-      <section id="ship" class="myship">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-lg-4">
-              <img src="@/assets/img/Discovery.png" class="img-fluid" alt="" />
-            </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content">
-              <h3>ShapeShip <b>NEWAH : NCC-3569-A</b></h3>
-              <p class="fst-italic">
-                <em
-                  >"All things can be understood once they are discovered; the
-                  point is to discover them."</em
-                >
-                - <i>Galileo Galilei</i>
-              </p>
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Register Number:</strong> <span>NCC-3569-A</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Contructed:</strong> <span>November 2256</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Origin:</strong>
-                      <span> San Francisco Fleet Yards, Earth</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Siblings:</strong>
-                      <span>USS Discovery, USS Shenzhou and USS Glenn</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Class:</strong>
-                      <span>Crossfield-class starship</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Federation:</strong>
-                      <span>Federation Starfleet</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Captain:</strong> <span>Saru</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Assets:</strong>
-                      <span
-                        >Artificial Inteligent, Spore Drive and Time-travel
-                        machine.</span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <p style="color: black">
-                <em
-                  >"This ship bears the name Discovery. Never has that been more
-                  fitting, or more prescient. She has carried us into the
-                  future, and it will be our privilege to make that future
-                  bright. Let us begin. Together."</em
-                >
-                - <i>Captain Saru, 3189 ("People of Earth")</i>
-              </p>
-              <br />
-              <button
-                class="btn btn-warnning"
-                style="color: black; background-color: #0563bb"
-              >
-                <a href="./Pages/MoreInfo/SpaceShip.html" style="color: black"
-                  >See More!</a
-                >
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End About Section -->
+      </div>
+      <!-- Eeve Working End-div -->
 
       <!-- ======= Facts Section ======= -->
       <section class="facts">
@@ -961,28 +963,18 @@
       </section>
       <!-- End Facts Section -->
 
-      <!-- ======= Vertical Time-Line ======= -->
+      <!-- ======= Time-Line ======= -->
       <section class="timeline">
         <div
           class="section-title row"
-          style="background-color: #0563bb; padding: 2%"
+          style="background-color: #34496a; padding: 2%"
         >
           <h2 style="color: white">Historical Time-line</h2>
           <div class="section-title">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/5bfc8dbab40b9d7dd9054f41/1574786546263-Z441DKZBZDHV9Q7ABEFY/A-Timeline-Through-the-Star-Trek-Universe-Part-I.jpg?format=1000w"
-              alt="Start Trek Narrative TimeLine"
-              width="100%"
-              class="img-fluid"
-            />
-            <br /><br />
-            <img
-              src="https://i0.wp.com/ropedrop.net/wp-content/uploads/2020/02/Star-Wars-Narrative-Timeline.jpeg?fit=3240%2C1080&ssl=1"
-              alt="Star Wars Narrative TimeLine"
-              width="100%"
-              class="img-fluid"
-            />
-            <br /><br />
+              <img src="https://i.pinimg.com/originals/2b/b6/8f/2bb68fffd4127c7101cfc74b576d240f.gif" class="imgTime" alt="Start Trek Narrative TimeLine" width="300px" height="300px">
+              <img src="https://i.pinimg.com/originals/e5/48/60/e5486034b3053e5877a8eebc44076722.gif" style="--color:#44D62C" class="imgTime" alt="Start Trek Narrative TimeLine" width="300px" height="300px">
+              <img src="https://i.pinimg.com/originals/04/41/ea/0441ea5619b979bde781aa040943c208.gif" style="--color:#ff073a" alt="Start Trek Narrative TimeLine" class="imgTime" width="300px" height="300px">
+
             <p
               class="col-10 align-self-lg-center"
               style="color: white; margin-left: 10%"
@@ -1742,5 +1734,43 @@ export default {
 }
 .svg-box #robot {
   cursor: pointer;
+}
+
+/*===== IMG Time-Line ====*/
+.imgTime {
+  --color: #fa6900; /* the color of the border */
+  --border: 10px; /* the thickness of the border */
+  --offset: 30px; /* control the movement of the border */
+  --gap: 5px; /* the gap on hover */
+
+  border-radius: 50%;
+  cursor: pointer;
+  padding: calc(var(--border) + var(--gap));
+  border: var(--offset) solid #0000;
+  --_m: radial-gradient(
+    50% 50%,
+    #000 calc(100% - var(--offset)),
+    #0000 calc(100% - var(--border))
+  );
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  --_g: #0000 calc(99% - var(--border)),
+    var(--color) calc(100% - var(--border)) 99%, #0000;
+  --_s: var(--offset);
+  --_r: 100% 100% at;
+  background: radial-gradient(var(--_r) 0 0, var(--_g)) calc(100% + var(--_s))
+      calc(100% + var(--_s)),
+    radial-gradient(var(--_r) 100% 0, var(--_g)) calc(0% - var(--_s))
+      calc(100% + var(--_s)),
+    radial-gradient(var(--_r) 0 100%, var(--_g)) calc(100% + var(--_s))
+      calc(0% - var(--_s)),
+    radial-gradient(var(--_r) 100% 100%, var(--_g)) calc(0% - var(--_s))
+      calc(0% - var(--_s));
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+img:hover {
+  --_s: 0px;
 }
 </style>
