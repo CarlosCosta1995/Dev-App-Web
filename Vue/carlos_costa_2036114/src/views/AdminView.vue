@@ -59,7 +59,7 @@
             />
           </div>
           <div class="col-md-6">
-            <label for="shipType" class="form-label">Type of shipe</label>
+            <label for="shipType" class="form-label">Type of ship</label>
             <input
               type="text"
               v-model="shipType"
@@ -98,27 +98,25 @@
               placeholder="Captain Saru"
             />
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <label for="shipAssets" class="form-label">Assets </label>
-            <select id="shipAssets" v-model="shipAssets" class="form-select">
-              <option selected>Choose...</option>
-              <option>Artificial Inteligent</option>
-              <option>Spore Drive</option>
-              <option>Time-travel machine</option>
-            </select>
+            <input
+              type="text"
+              v-model="shipAssets"
+              class="form-control"
+              id="shipAssets"
+              placeholder="Artificial Inteligent, Spore Drive, Time-travel machine, ..."
+            />
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <label for="shipSiblings" class="form-label">Siblings</label>
-            <select
-              id="shipSiblings"
+            <input
+              type="text"
               v-model="shipSiblings"
-              class="form-select"
-            >
-              <option selected>Choose...</option>
-              <option>USS Discovery</option>
-              <option>USS Shenzhou</option>
-              <option>USS Glenn</option>
-            </select>
+              class="form-control"
+              id="shipSiblings"
+              placeholder="USS Discovery, USS Shenzhou, USS Glenn, ..."
+            />
           </div>
           <div class="col-12">
             <button type="submit" class="btn btn-primary" @click="guardar()">
@@ -140,18 +138,6 @@
               id="planetName"
               placeholder="Ni'Var [Vulcan(alternate reality)]"
             />
-          </div>
-          <div class="col-12">
-            <label for="planetDescription" class="form-label"
-              >Planet Description</label
-            >
-            <textarea
-              class="form-control"
-              name="comment"
-              form="planetDescription"
-            >
-Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of the Alpha Quadrant. It had no moons, but appeared to have close planetary companions. </textarea
-            >
           </div>
           <div class="col-12">
             <label for="planetLocation" class="form-label"
@@ -197,7 +183,13 @@ Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of
             <label for="planetClassification" class="form-label"
               >Planetary classification
             </label>
-            <select id="planetClassification" class="form-select">
+            <input
+              type="text"
+              class="form-control"
+              id="planetClassification"
+              placeholder="Class D, class H, Unnamed or Asteroid, ... "
+            />
+            <!-- <select id="planetClassification" class="form-select">
               <option selected>Choose...</option>
               <option>class D worlds</option>
               <option>class H worlds</option>
@@ -210,33 +202,45 @@ Ni'Var, formerly Vulcan, was an inhabited M-class planet in the Vulcan system of
               <option>class T worlds</option>
               <option>class Y worlds</option>
               <option>Unnamed or Asteroid</option>
-            </select>
+            </select> -->
           </div>
           <div class="col-md-4">
             <label for="planetType" class="form-label">Type of Planet</label>
-            <select id="planetType" class="form-select">
+            <input
+              type="text"
+              class="form-control"
+              id="planetType"
+              placeholder="Binary Planet, Capital planet, Gas giant, Homeworld or Rogue planet"
+            />
+            <!-- <select id="planetType" class="form-select">
               <option selected>Choose...</option>
               <option>Binary Planet</option>
               <option>Capital planet</option>
               <option>Gas giant</option>
               <option>Homeworld</option>
               <option>Rogue planet</option>
-            </select>
+            </select> -->
           </div>
           <div class="col-md-4">
             <label for="planetStatus" class="form-label"
               >Status of Planet</label
             >
-            <select id="planetStatus" class="form-select">
+            <input
+              type="text"
+              class="form-control"
+              id="planetStatus"
+              placeholder="Inhabited plane, Uninhabited planet, Delphic Expanse planet or Unnamed planet"
+            />
+            <!-- <select id="planetStatus" class="form-select">
               <option selected>Choose...</option>
               <option>Inhabited planet</option>
               <option>Uninhabited planet</option>
               <option>Delphic Expanse planet</option>
               <option>Unnamed planet</option>
-            </select>
+            </select> -->
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary" >
               Submit New Planet
             </button>
           </div>
@@ -411,32 +415,32 @@ import axios from "axios";
 export default {
   data() {
     return {
-      shipName: "",
-      registerNumber: "",
-      shipType: "",
-      buildDate: "",
-      origin: "",
-      shipCaptain: "",
-      shipAssets: [],
+      shipName: '',
+      registerNumber: '',
+      shipType: '',
+      buildDate: '',
+      origin: '',
+      shipCaptain: '',
+      shipAssets: '',
       shipSiblings: '',
     };
   },
   methods: {
     guardar() {
       axios
-        .post("https://project-vue-cc-default-rtdb.firebaseio.com/.json", {
+        .post("https://project-vue-cc-default-rtdb.firebaseio.com/.json", 
+        {
           shipName: this.shipName,
-        //   registerNumber: this.registerNumber,
-        //   shipType: this.shipType,
-        //   buildDate: this.buildDate,
-        //   origin: this.origin,
-        //   shipCaptain: this.shipCaptain,
-          shipAssets: this.shipAssets,})
-        //   shipSiblings: this.shipSiblings,
-        // })
-
-        // .then(() => console.log("wtv"));
-        .then((response) => this.shipId = response.data.id, console.log("wtv"));
+          registerNumber: this.registerNumber,
+          shipType: this.shipType,
+          buildDate: this.buildDate,
+          origin: this.origin,
+          shipCaptain: this.shipCaptain,
+          shipAssets: this.shipAssets,
+          shipSiblings: this.shipSiblings,
+        })
+        //.then(() => console.log("wtv"));
+        .then((response) => this.shipId = response.data.id, console.log("Send it!"));
     },
   },
 };
