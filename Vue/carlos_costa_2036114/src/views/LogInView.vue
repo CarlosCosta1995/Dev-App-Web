@@ -2,13 +2,6 @@
   <!-- partial:index.partial.html -->
   <div class="login-page">
     <div class="form">
-      <!-- <form class="register-form acrylic">
-          <span>Sign Up</span>
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required minlength="18"/>
-          <button id="SignUp">Go</button>
-          <p class="message"><a href="#">I have Account</a></p>
-        </form> -->
       <form class="login-form acrylic"  @submit.prevent="signInRequest">
         <span>Login to your account</span>
         <input
@@ -27,7 +20,6 @@
           minlength="6"
           maxlength="20"
         />
-        <!-- <span v-if="v$.Password.$error">{{ v$.Password.$errors[0].$message }}</span> -->
         <button id="SignIn" @click="validateLoginInputs()">Go</button>
         <p class="message">
           <router-link to="/signUp">
@@ -42,7 +34,7 @@
       </form>
     </div>
 
-    <!-- partial:index.partial.html -->
+    <!-- BB-8 Animation -->
     <div class="tattoine">
       <div class="bb-8">
         <div class="head">
@@ -71,7 +63,6 @@
 </template>
 
 <script setup>
-
 import firebase from "firebase";
 import "firebase/firestore";
 import "firebase/auth";
@@ -80,7 +71,6 @@ export default {
   name: "SignIn",
   data: function () {
     return {
-      // v$: useValidate(),
       Email: "",
       Password: "",
       PasswordConfirm: "",
@@ -96,12 +86,7 @@ export default {
           (user) => {
             console.log(user);
             console.log("LogIn Successfully");
-            // alert("LogIn Successfully");
             this.$router.push("/admin"); // redirect AdminPage
-            // next({
-            //   path: "/admin",
-            //   query: { redirect: to.fullPath },
-            // });
           },
           (error) => {
             console.log(error);
@@ -111,7 +96,8 @@ export default {
     },
     validateLoginInputs() {
       if (
-        // eslint-disable-next-line 
+        // Ignore the \. error
+        // eslint-disable-next-line
         !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.Email)
       ) {
         console.log("aqui1");
